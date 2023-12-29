@@ -6,7 +6,11 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'satoshi': ['Satoshi', 'sans-serif'], // Use a generic font fallback
+      },
+    },
   },
   plugins: [],
 }
