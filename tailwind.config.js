@@ -24,7 +24,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'hero': "linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.00) 71.84%), linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../assets/img/hero-leads.jpeg')",
+        'leads': "linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.00) 71.84%), linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../assets/img/hero-leads.jpeg')",
       },
     },
     container: {

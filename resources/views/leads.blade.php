@@ -9,7 +9,7 @@
 
 <body class="font-satoshi">
     {{-- Hero Section --}}
-    <div class="w-full h-[423px] px-4 bg-hero bg-cover text-white">
+    <div class="w-full h-[423px] px-4 bg-leads bg-cover text-white">
         <nav class="py-6 flex flex-row justify-between">
             <img src="../assets/vector/logo.svg" alt="Qarir Generator Logo" class="w-[150px]" />
             <a href="https://calendar.app.google/6xrDJSLWZhcYxYrs9"
@@ -366,58 +366,65 @@
             </button>
         </div>
     </div>
-    <footer class="bg-secondary mt-9 px-4 pt-[26px] pb-11 flex flex-col gap-10 text-white">
-        <div class="flex flex-col gap-4">
-            <img src="../assets/vector/logo.svg" alt="Qarir Generator Logo" class="w-[150px]" />
-            <div class="flex flex-col gap-2">
-                <h3 class="text-base font-semibold">Jakarta</h3>
-                <p class="text-sm font-normal">QarirGenerator Office 8, level 18-A, Sudirman Central Business District
-                    (SCBD) Jl. Jenderal Sudirman
-                    no.1, RT8/RW3, Senayan, Kebayoran Baru, Jakarta Selatan.</p>
-                <div class="inline-flex gap-2">
-                    <img src="../assets/vector/phone.svg" alt="Icon Phone" />
-                    <span class="text-sm font-normal">+62 811-1001-4420</span>
+    <footer class="bg-secondary mt-9 pt-[26px] pb-11">
+        <div class="relative text-white">
+            <img src="../assets/img/world-map-ill.png" alt="World Map Illustration" class="absolute mt-16">
+            <div class="flex flex-col gap-10 px-4">
+                <div class="flex flex-col gap-4">
+                    <img src="../assets/vector/logo.svg" alt="Qarir Generator Logo" class="w-[150px]" />
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-base font-semibold">Jakarta</h3>
+                        <p class="text-sm font-normal">QarirGenerator Office 8, level 18-A, Sudirman Central Business
+                            District
+                            (SCBD) Jl. Jenderal Sudirman
+                            no.1, RT8/RW3, Senayan, Kebayoran Baru, Jakarta Selatan.</p>
+                        <div class="inline-flex gap-2">
+                            <img src="../assets/vector/phone.svg" alt="Icon Phone" />
+                            <span class="text-sm font-normal">+62 811-1001-4420</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-base font-semibold">Istanbul</h3>
+                        <p class="text-sm font-normal">Maslak, Büyükdere Cad. No:255 Nurol Plaza B.02, 34450
+                            Sarıyer/İstanbul
+                        </p>
+                        <div class="inline-flex gap-2">
+                            <img src="../assets/vector/phone.svg" alt="Icon Phone" />
+                            <span class="text-sm font-normal">+90 551 402 62 05</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="flex flex-col gap-2">
-                <h3 class="text-base font-semibold">Istanbul</h3>
-                <p class="text-sm font-normal">Maslak, Büyükdere Cad. No:255 Nurol Plaza B.02, 34450 Sarıyer/İstanbul
-                </p>
-                <div class="inline-flex gap-2">
-                    <img src="../assets/vector/phone.svg" alt="Icon Phone" />
-                    <span class="text-sm font-normal">+90 551 402 62 05</span>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-base font-semibold text-primary-darker">Service</h3>
+                    <p class="text-sm font-normal">Career Survivor
+                        <br>Career Accelerator
+                        <br>Talent Pool
+                    </p>
                 </div>
-            </div>
-        </div>
-        <div class="flex flex-col gap-2">
-            <h3 class="text-base font-semibold text-primary-darker">Service</h3>
-            <p class="text-sm font-normal">Career Survivor
-                <br>Career Accelerator
-                <br>Talent Pool
-            </p>
-        </div>
-        <div class="flex flex-col gap-2">
-            <h3 class="text-base font-semibold text-primary-darker">Global Career Center</h3>
-            <p class="text-sm font-normal">Indonesia
-                <br>Malaysia
-                <br>Istanbul
-            </p>
-        </div>
-        <div class="flex flex-col gap-2">
-            <h3 class="text-base font-semibold text-primary-darker">About US</h3>
-            <p class="text-sm font-normal">Career
-                <br>Partnership
-                <br>Pricing
-            </p>
-        </div>
-        <div class="flex flex-row gap-5">
-            <img src="../assets/vector/instagram.svg" alt="Icon Instagram" />
-            <img src="../assets/vector/linkedin.svg" alt="Icon LinkedIn" />
-            <img src="../assets/vector/twitter.svg" alt="Icon Twitter" />
-            <img src="../assets/vector/tiktok.svg" alt="Icon Tiktok" />
-            <img src="../assets/vector/youtube.svg" alt="Icon Youtube" />
-            <img src="../assets/vector/spotify.svg" alt="Icon Spotify" />
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-base font-semibold text-primary-darker">Global Career Center</h3>
+                    <p class="text-sm font-normal">Indonesia
+                        <br>Malaysia
+                        <br>Istanbul
+                    </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-base font-semibold text-primary-darker">About US</h3>
+                    <p class="text-sm font-normal">Career
+                        <br>Partnership
+                        <br>Pricing
+                    </p>
+                </div>
+                <div class="flex flex-row gap-5">
+                    <img src="../assets/vector/instagram.svg" alt="Icon Instagram" />
+                    <img src="../assets/vector/linkedin.svg" alt="Icon LinkedIn" />
+                    <img src="../assets/vector/twitter.svg" alt="Icon Twitter" />
+                    <img src="../assets/vector/tiktok.svg" alt="Icon Tiktok" />
+                    <img src="../assets/vector/youtube.svg" alt="Icon Youtube" />
+                    <img src="../assets/vector/spotify.svg" alt="Icon Spotify" />
 
+                </div>
+            </div>
         </div>
     </footer>
 </body>
