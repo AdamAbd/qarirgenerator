@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mystyle {
+    background-image: url("../assets/img/hero-leads.jpeg");
+}
