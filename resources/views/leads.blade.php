@@ -12,11 +12,12 @@
     <div class="w-full h-[423px] px-4 bg-hero bg-cover text-white">
         <nav class="py-6 flex flex-row justify-between">
             <img src="../assets/vector/logo.svg" alt="Qarir Generator Logo" class="w-[150px]" />
-            <button class="bg-gradient-to-r from-primary to-secondary text-sm font-medium leading-[8px] rounded-lg p-px">
+            <a href="https://calendar.app.google/6xrDJSLWZhcYxYrs9"
+                class="bg-gradient-to-r from-primary to-secondary text-sm font-medium leading-[8px] rounded-lg p-px cursor-pointer">
                 <span class="flex items-center w-full h-full bg-secondary rounded-lg px-3.5 py-4">
                     Book A Call
                 </span>
-            </button>
+            </a>
             <img src="../assets/vector/menu.svg" alt="Menu" class="mr-2 cursor-pointer" />
         </nav>
         <h1 class="text-2xl font-bold mt-22">Tentukan Masa Depanmu</h1>
@@ -49,23 +50,23 @@
                     4 Bulan Program Intensif (Live Session)
                 </div>
                 <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/work-update.svg" alt="Icon Live TV" />
+                    <img src="../assets/vector/work-update-b.svg" alt="Icon Work Update" />
                     Gratis layanan career coaching
                 </div>
                 <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/live-tv.svg" alt="Icon Live TV" />
+                    <img src="../assets/vector/work-history-b.svg" alt="Icon Work History" />
                     Dukungan Karir seumur hidup
                 </div>
                 <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/live-tv.svg" alt="Icon Live TV" />
+                    <img src="../assets/vector/domain-verification.svg" alt="Icon Domain Verification" />
                     Penyaluran kerja dan magang
                 </div>
                 <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/live-tv.svg" alt="Icon Live TV" />
+                    <img src="../assets/vector/public.svg" alt="Icon Public" />
                     Kesempatan bekerja di luar negeri
                 </div>
                 <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/live-tv.svg" alt="Icon Live TV" />
+                    <img src="../assets/vector/travel-explore.svg" alt="Icon Travel Explore" />
                     Tutor Internasional Magic Session Clinic+
                 </div>
             </div>
@@ -102,10 +103,10 @@
                 tren dari waktu ke waktu.
             </p>
             <img src="../assets/img/n-gram.png" alt="Image about N Gram" class="w-full" />
-            <button
-                class="inline-flex gap-2 justify-center items-center h-10 bg-primary rounded-full text-sm text-white font-bold">
+            <a href="https://www.linkedin.com/posts/i-putu-harum-semadi-430380120_sentiment-analysis-qarir-generator-activity-7130065674034450432-H-iH?utm_source=share&utm_medium=member_desktop"
+                class="inline-flex gap-2 justify-center items-center h-10 bg-primary rounded-full text-sm text-white font-bold cursor-pointer">
                 Pelajari Lebih Banyak
-            </button>
+            </a>
         </div>
     </div>
     {{-- Card Pengalaman di Kelas --}}
@@ -114,18 +115,18 @@
             <h2 class="text-lg font-semibold">Pengalaman di Kelas</h2>
             <div class="mt-4 flex flex-col gap-5">
                 <div class="flex flex-col gap-2">
-                    <img src="../assets/img/class-exp.png" alt="Image about N Gram" class="w-full" />
+                    <img src="../assets/img/class-exp.png" alt="Image about Class Experience" class="w-full" />
                     <p class="text-sm font-normal">Pengalaman kelas offline hybrid membahas industry case yang nyata
                         dengan
                         para pakar dari C-Level</p>
                 </div>
                 <div class="flex flex-col gap-2">
-                    <img src="../assets/img/class-exp.png" alt="Image about N Gram" class="w-full" />
+                    <img src="../assets/img/class-exp1.png" alt="Image about Class Experience" class="w-full" />
                     <p class="text-sm font-normal">Berlatih presentasi bisnis dalam bahasa inggris lebih intensif dengan
                         native speaker dari United Kingdom</p>
                 </div>
                 <div class="flex flex-col gap-2">
-                    <img src="../assets/img/class-exp.png" alt="Image about N Gram" class="w-full" />
+                    <img src="../assets/img/class-exp2.png" alt="Image about Class Experience" class="w-full" />
                     <p class="text-sm font-normal">Dukungan English Interview Practice bersama
                         native speaker langsung dari United Kingdom</p>
                 </div>
@@ -208,15 +209,15 @@
                     Mengisi form di sini
                 </div>
                 <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/work-update.svg" alt="Icon Work Update" />
+                    <img src="../assets/vector/work-update-b.svg" alt="Icon Work Update" />
                     Konsultasi Karir dengan Mentor (via zoom)
                 </div>
                 <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/live-tv.svg" alt="Icon Live TV" />
+                    <img src="../assets/vector/work-history-b.svg" alt="Icon Work History" />
                     Review & Pengiriman CV/Resume
                 </div>
                 <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/live-tv.svg" alt="Icon Live TV" />
+                    <img src="../assets/vector/domain-verification.svg" alt="Icon Domain Verification" />
                     Pengumuman hasil & rekomendasi
                 </div>
             </div>
@@ -262,7 +263,7 @@
         <div class="px-2 flex flex-col gap-2">
             <h2 class="text-lg font-semibold">Dukungan Karir</h2>
             <p class="text-sm font-light">Temui Pelatih Karir dan bersiaplah untuk memulai karir Kamu</p>
-            <img src="../assets/img/class-exp.png" alt="Image about career support" class="w-full" />
+            <img src="../assets/img/career_ill.png" alt="Image about career support" class="w-full" />
         </div>
     </div>
     <div class="container mx-auto mt-10">
@@ -297,19 +298,19 @@
             <h2 class="text-lg font-bold text-text">Personal Branding</h2>
             <div class="mt-4 gap-2">
                 <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/live-tv.svg" alt="Icon Live TV" />
+                    <img src="../assets/vector/for-you.svg" alt="Icon For You" />
                     Bangun profil profesional Kamu
                 </div>
                 <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/work-update.svg" alt="Icon Work Update" />
+                    <img src="../assets/vector/airplane-ticket-b.svg" alt="Icon Airplane Ticket" />
                     Bagikan portofolio Kamu dengan penyampaian cerita yang bagus
                 </div>
                 <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/live-tv.svg" alt="Icon Live TV" />
+                    <img src="../assets/vector/add-reaction.svg" alt="Icon Add Reaction" />
                     Terhubung dengan para ahli
                 </div>
                 <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/live-tv.svg" alt="Icon Live TV" />
+                    <img src="../assets/vector/globe.svg" alt="Icon Globe" />
                     Menginspirasi dunia
                 </div>
             </div>
