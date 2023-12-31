@@ -400,12 +400,12 @@
             <h2 class="text-lg lg:text-3xl font-semibold lg:font-medium">Jadwal Kelas Terdekat</h2>
             <div class="flex flex-col lg:flex-row mt-4 lg:mt-8 gap-8">
                 <div class="flex flex-col gap-2 lg:gap-4">
-                    <button
-                        class="inline-flex gap-2 items-center px-10 w-full lg:w-[354px] h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
+                    <button onclick="jadwalKelas(event)" data-label="0"
+                        class="jadwalKelas inline-flex gap-2 items-center px-10 w-full lg:w-[354px] h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
                         Januari 2024
                     </button>
-                    <button
-                        class="inline-flex gap-2 items-center px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
+                    <button onclick="jadwalKelas(event)" data-label="1"
+                        class="jadwalKelas inline-flex gap-2 items-center px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                         Februari 2024
                     </button>
                 </div>
@@ -417,9 +417,9 @@
                             <p><b>Kelas</b>
                                 <br>
                                 <br>
-                                2x dalam seminggu
+                                <p id="info">2x dalam seminggu</p>
                             </p>
-                            <ul class="list-disc ml-5">
+                            <ul id="listJadwal" class="list-disc ml-5">
                                 <li>Kamis, 19.30 - 21.30 (UTC+7)</li>
                                 <li> Sabtu, 10.30 - 12.30 (UTC+7) or Sabtu, 15.30 - 17.30 (UTC+7)</li>
                             </ul>
@@ -512,6 +512,7 @@
             </div>
         </div>
     </footer>
+    <script src="{{asset('js')}}/main.js"></script>
 </body>
 
 </html>
