@@ -289,28 +289,28 @@
             <img src="../assets/img/career_ill.png" alt="Image about career support" class="w-full lg:w-96" />
         </div>
         <div class="flex-1 flex flex-col gap-1.5 mt-8 lg:mt-0 lg:mr-4">
-            <button
-                class="inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
+            <button onclick="jadwalKelas(event)" data-label="0" data-title="branding"
+                class="jadwalKelas inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
                 Personal Branding
             </button>
-            <button
-                class="inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
+            <button onclick="jadwalKelas(event)" data-label="1" data-title="branding"
+                class="jadwalKelas inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                 Kursus Bahasa Inggris Bisnis
             </button>
-            <button
-                class="inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
+            <button onclick="jadwalKelas(event)" data-label="2" data-title="branding"
+                class="jadwalKelas inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                 Praktek Public Speaking
             </button>
-            <button
-                class="inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
+            <button onclick="jadwalKelas(event)" data-label="3" data-title="branding"
+                class="jadwalKelas inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                 Dukungan Mencari Pekerjaan
             </button>
-            <button
-                class="inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
+            <button onclick="jadwalKelas(event)" data-label="4" data-title="branding"
+                class="jadwalKelas inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                 Praktek Interview
             </button>
-            <button
-                class="inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
+            <button onclick="jadwalKelas(event)" data-label="5" data-title="branding"
+                class="jadwalKelas inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                 Project Management Trainee
             </button>
         </div>
@@ -319,20 +319,20 @@
             <div class="flex flex-col mt-4 gap-2 lg:gap-4">
                 <div class="inline-flex items-start gap-2 text-text text-sm lg:text-lg font-normal">
                     <img src="../assets/vector/for-you.svg" alt="Icon For You" class="w-4 lg:w-6" />
-                    Bangun profil profesional Kamu
+                    <p id="person">Bangun profil profesional Kamu</p>
                 </div>
                 <div class="inline-flex items-start gap-2 text-text text-sm lg:text-lg font-normal">
                     <img src="../assets/vector/airplane-ticket-b.svg" alt="Icon Airplane Ticket"
                         class="w-4 lg:w-6" />
-                    Bagikan portofolio Kamu dengan penyampaian cerita yang bagus
+                    <p id="flight">Bagikan portofolio Kamu dengan penyampaian cerita yang bagus</p>
                 </div>
                 <div class="inline-flex items-start gap-2 text-text text-sm lg:text-lg font-normal">
                     <img src="../assets/vector/add-reaction.svg" alt="Icon Add Reaction" class="w-4 lg:w-6" />
-                    Terhubung dengan para ahli
+                    <p id="emote">Terhubung dengan para ahli</p>
                 </div>
                 <div class="inline-flex items-start gap-2 text-text text-sm lg:text-lg font-normal">
                     <img src="../assets/vector/globe.svg" alt="Icon Globe" class="w-4 lg:w-6" />
-                    Menginspirasi dunia
+                    <p id="earth">Menginspirasi dunia</p>
                 </div>
             </div>
         </div>
@@ -342,11 +342,11 @@
             <h2 class="text-lg lg:text-3xl font-semibold lg:font-medium">Jadwal Kelas Terdekat</h2>
             <div class="flex flex-col lg:flex-row mt-4 lg:mt-8 gap-8">
                 <div class="flex flex-col gap-2 lg:gap-4">
-                    <button onclick="jadwalKelas(event)" data-label="0"
+                    <button onclick="jadwalKelas(event)" data-label="0" data-title="kelas"
                         class="jadwalKelas inline-flex gap-2 items-center px-10 w-full lg:w-[354px] h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
                         Januari 2024
                     </button>
-                    <button onclick="jadwalKelas(event)" data-label="1"
+                    <button onclick="jadwalKelas(event)" data-label="1" data-title="kelas"
                         class="jadwalKelas inline-flex gap-2 items-center px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                         Februari 2024
                     </button>
@@ -359,7 +359,7 @@
                             <p><b>Kelas</b>
                                 <br>
                                 <br>
-                            <p id="info">2x dalam seminggu</p>
+                                <p id="infoJadwal">2x dalam seminggu</p>
                             </p>
                             <ul id="listJadwal" class="list-disc ml-5">
                                 <li>Kamis, 19.30 - 21.30 (UTC+7)</li>
