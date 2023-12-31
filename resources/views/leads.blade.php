@@ -9,7 +9,7 @@
 
 <body class="font-satoshi">
     {{-- Hero Section --}}
-    <div class="w-full h-[423px] lg:h-[708px] px-4 lg:px-[60px] bg-leads bg-cover text-white">
+    <div class="w-full h-[423px] lg:h-[708px] px-4 lg:px-[60px] bg-leads bg-center bg-cover text-white">
         <nav class="py-6 flex flex-row justify-between">
             <img src="../assets/vector/logo.svg" alt="Qarir Generator Logo" class="w-[150px] lg:hidden" />
             <div class="hidden lg:flex flex-row gap-[60px] items-center">
@@ -46,9 +46,9 @@
             <img src="../assets/vector/ai-m.svg" alt="Icon AI Engineering" class="lg:hidden" />
         </div>
         <button
-            class="inline-flex gap-2 items-center mt-5 lg:mt-10 px-5 lg:px-10 h-10 lg:h-14 bg-primary rounded-full text-sm last:text-lg font-bold">
+            class="inline-flex gap-2 lg:gap-4 items-center mt-5 lg:mt-10 px-5 lg:px-10 h-10 lg:h-14 bg-primary rounded-full text-sm last:text-lg font-bold">
             Pelajari Lebih Banyak
-            <img src="../assets/vector/arrow-down.svg" alt="Arrow Down" />
+            <img src="../assets/vector/arrow-down.svg" alt="Arrow Down" class="w-4 lg:w-6" />
         </button>
     </div>
     <div class="mx-2 lg:mx-4 mt-4 flex flex-col lg:flex-row gap-4">
@@ -119,7 +119,7 @@
                     tren dari waktu ke waktu.
                 </p>
                 <a href="https://www.linkedin.com/posts/i-putu-harum-semadi-430380120_sentiment-analysis-qarir-generator-activity-7130065674034450432-H-iH?utm_source=share&utm_medium=member_desktop"
-                    class="items-center px-10 w-[300px] h-10 bg-primary rounded-full text-sm lg:text-lg text-white font-bold cursor-pointer hidden lg:flex">
+                    class="items-center px-10 w-[300px] h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold cursor-pointer hidden lg:flex">
                     Lihat Karya I Putu Harum
                 </a>
             </div>
@@ -288,113 +288,61 @@
             </p>
         </div>
     </div>
-    <div class="mx-4 lg:mx-[60px] mt-10 lg:mt-12 flex flex-col lg:flex-row gap-10 lg:gap-8">
-        <div class="flex flex-col gap-2 lg:gap-4 w-[450px]">
+    <div class="mx-4 lg:mx-[60px] mt-10 lg:mt-12 flex flex-col lg:flex-row">
+        <div class="flex flex-col gap-2 lg:gap-4 w-full lg:w-[450px] lg:mr-8">
             <h2 class="text-lg lg:text-3xl font-semibold lg:font-medium">Dukungan Karir</h2>
             <p class="text-sm lg:text-lg font-light">Temui Pelatih Karir dan bersiaplah untuk memulai karir Kamu</p>
             <img src="../assets/img/career_ill.png" alt="Image about career support" class="w-full lg:w-96" />
         </div>
-        <div class="flex flex-col lg:flex-row gap-4">
-            <div class="flex flex-col gap-1.5">
-                <button
-                    class="inline-flex gap-2 px-6 items-center h-10 bg-primary rounded-full text-sm text-white font-bold">
-                    Personal Branding
-                </button>
-                <button
-                    class="inline-flex gap-2 px-6 items-center h-10 border border-primary rounded-full text-sm text-primary font-bold">
-                    Kursus Bahasa Inggris Bisnis
-                </button>
-                <button
-                    class="inline-flex gap-2 px-6 items-center h-10 border border-primary rounded-full text-sm text-primary font-bold">
-                    Praktek Public Speaking
-                </button>
-                <button
-                    class="inline-flex gap-2 px-6 items-center h-10 border border-primary rounded-full text-sm text-primary font-bold">
-                    Dukungan Mencari Pekerjaan
-                </button>
-                <button
-                    class="inline-flex gap-2 px-6 items-center h-10 border border-primary rounded-full text-sm text-primary font-bold">
-                    Praktek Interview
-                </button>
-                <button
-                    class="inline-flex gap-2 px-6 items-center h-10 border border-primary rounded-full text-sm text-primary font-bold">
-                    Project Management Trainee
-                </button>
-            </div>
-            {{-- Card Personal Branding --}}
-            <div class="bg-primary/10 p-4 rounded-[18px] lg:w-[520px]">
-                <h2 class="text-lg lg:text-3xl font-bold lg:font-medium text-text">Personal Branding</h2>
-                <div class="mt-4 gap-2">
-                    <div class="inline-flex gap-2 text-text text-sm font-normal">
-                        <img src="../assets/vector/for-you.svg" alt="Icon For You" />
-                        Bangun profil profesional Kamu
-                    </div>
-                    <div class="inline-flex gap-2 text-text text-sm font-normal">
-                        <img src="../assets/vector/airplane-ticket-b.svg" alt="Icon Airplane Ticket" />
-                        Bagikan portofolio Kamu dengan penyampaian cerita yang bagus
-                    </div>
-                    <div class="inline-flex gap-2 text-text text-sm font-normal">
-                        <img src="../assets/vector/add-reaction.svg" alt="Icon Add Reaction" />
-                        Terhubung dengan para ahli
-                    </div>
-                    <div class="inline-flex gap-2 text-text text-sm font-normal">
-                        <img src="../assets/vector/globe.svg" alt="Icon Globe" />
-                        Menginspirasi dunia
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {{-- <div class="container mx-auto mt-10">
-        <div class="flex flex-col gap-1.5">
+        <div class="flex-1 flex flex-col gap-1.5 mt-8 lg:mt-0 lg:mr-4">
             <button
-                class="inline-flex gap-2 px-6 items-center h-10 bg-primary rounded-full text-sm text-white font-bold">
+                class="inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
                 Personal Branding
             </button>
             <button
-                class="inline-flex gap-2 px-6 items-center h-10 border border-primary rounded-full text-sm text-primary font-bold">
+                class="inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                 Kursus Bahasa Inggris Bisnis
             </button>
             <button
-                class="inline-flex gap-2 px-6 items-center h-10 border border-primary rounded-full text-sm text-primary font-bold">
+                class="inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                 Praktek Public Speaking
             </button>
             <button
-                class="inline-flex gap-2 px-6 items-center h-10 border border-primary rounded-full text-sm text-primary font-bold">
+                class="inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                 Dukungan Mencari Pekerjaan
             </button>
             <button
-                class="inline-flex gap-2 px-6 items-center h-10 border border-primary rounded-full text-sm text-primary font-bold">
+                class="inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                 Praktek Interview
             </button>
             <button
-                class="inline-flex gap-2 px-6 items-center h-10 border border-primary rounded-full text-sm text-primary font-bold">
+                class="inline-flex gap-2 items-center px-6 lg:px-10 w-full lg:w-[354px] h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                 Project Management Trainee
             </button>
-        </div> --}}
-    {{-- Card Personal Branding --}}
-    {{-- <div class="bg-primary/10 mt-4 p-4 rounded-[18px]">
+        </div>
+        <div class="bg-primary/10 p-4 lg:px-[60px] lg:py-[30px] rounded-[18px] w-full mt-4 lg:mt-0 lg:w-[512px]">
             <h2 class="text-lg lg:text-3xl font-bold lg:font-medium text-text">Personal Branding</h2>
-            <div class="mt-4 gap-2">
-                <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/for-you.svg" alt="Icon For You" />
+            <div class="flex flex-col mt-4 gap-2 lg:gap-4">
+                <div class="inline-flex items-start gap-2 text-text text-sm lg:text-lg font-normal">
+                    <img src="../assets/vector/for-you.svg" alt="Icon For You" class="w-4 lg:w-6" />
                     Bangun profil profesional Kamu
                 </div>
-                <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/airplane-ticket-b.svg" alt="Icon Airplane Ticket" />
+                <div class="inline-flex items-start gap-2 text-text text-sm lg:text-lg font-normal">
+                    <img src="../assets/vector/airplane-ticket-b.svg" alt="Icon Airplane Ticket"
+                        class="w-4 lg:w-6" />
                     Bagikan portofolio Kamu dengan penyampaian cerita yang bagus
                 </div>
-                <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/add-reaction.svg" alt="Icon Add Reaction" />
+                <div class="inline-flex items-start gap-2 text-text text-sm lg:text-lg font-normal">
+                    <img src="../assets/vector/add-reaction.svg" alt="Icon Add Reaction" class="w-4 lg:w-6" />
                     Terhubung dengan para ahli
                 </div>
-                <div class="inline-flex gap-2 text-text text-sm font-normal">
-                    <img src="../assets/vector/globe.svg" alt="Icon Globe" />
+                <div class="inline-flex items-start gap-2 text-text text-sm lg:text-lg font-normal">
+                    <img src="../assets/vector/globe.svg" alt="Icon Globe" class="w-4 lg:w-6" />
                     Menginspirasi dunia
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
     <div class="mx-2 lg:mx-4 mt-10 lg:mt-12">
         <div class="px-4 lg:px-[60px] py-5 lg:py-[30px] bg-secondary rounded-[18px] text-white">
             <h2 class="text-lg lg:text-3xl font-semibold lg:font-medium">Jadwal Kelas Terdekat</h2>
@@ -455,59 +403,65 @@
         <div class="relative text-white">
             <img src="../assets/img/world-map-ill.png" alt="World Map Illustration" class="absolute mt-16 lg:h-96">
             <div class="flex flex-col lg:flex-row gap-10 px-4 lg:px-20">
-                <div class="flex flex-col gap-4">
-                    <img src="../assets/vector/logo.svg" alt="Qarir Generator Logo" class="w-[150px]" />
+                <div class="flex flex-col gap-4 lg:w-2/5">
+                    <img src="../assets/vector/logo.svg" alt="Qarir Generator Logo"
+                        class="w-[150px] lg:w-[167px] lg:h-10" />
                     <div class="flex flex-col gap-2">
                         <h3 class="text-base font-semibold">Jakarta</h3>
-                        <p class="text-sm font-normal">QarirGenerator Office 8, level 18-A, Sudirman Central Business
+                        <p class="text-sm lg:text-base font-normal">QarirGenerator Office 8, level 18-A, Sudirman
+                            Central Business
                             District
                             (SCBD) Jl. Jenderal Sudirman
                             no.1, RT8/RW3, Senayan, Kebayoran Baru, Jakarta Selatan.</p>
                         <div class="inline-flex gap-2">
-                            <img src="../assets/vector/phone.svg" alt="Icon Phone" />
-                            <span class="text-sm font-normal">+62 811-1001-4420</span>
+                            <img src="../assets/vector/phone.svg" alt="Icon Phone" class="w-4 lg:w-6" />
+                            <span class="text-sm lg:text-base font-normal">+62 811-1001-4420</span>
                         </div>
                     </div>
                     <div class="flex flex-col gap-2">
                         <h3 class="text-base font-semibold">Istanbul</h3>
-                        <p class="text-sm font-normal">Maslak, Büyükdere Cad. No:255 Nurol Plaza B.02, 34450
+                        <p class="text-sm lg:text-base font-normal">Maslak, Büyükdere Cad. No:255 Nurol Plaza B.02,
+                            34450
                             Sarıyer/İstanbul
                         </p>
                         <div class="inline-flex gap-2">
-                            <img src="../assets/vector/phone.svg" alt="Icon Phone" />
-                            <span class="text-sm font-normal">+90 551 402 62 05</span>
+                            <img src="../assets/vector/phone.svg" alt="Icon Phone" class="w-4 lg:w-6" />
+                            <span class="text-sm lg:text-base font-normal">+90 551 402 62 05</span>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-2">
-                    <h3 class="text-base font-semibold text-primary-darker">Service</h3>
-                    <p class="text-sm font-normal">Career Survivor
-                        <br>Career Accelerator
-                        <br>Talent Pool
-                    </p>
-                </div>
-                <div class="flex flex-col gap-2">
-                    <h3 class="text-base font-semibold text-primary-darker">Global Career Center</h3>
-                    <p class="text-sm font-normal">Indonesia
-                        <br>Malaysia
-                        <br>Istanbul
-                    </p>
-                </div>
-                <div class="flex flex-col gap-2">
-                    <h3 class="text-base font-semibold text-primary-darker">About US</h3>
-                    <p class="text-sm font-normal">Career
-                        <br>Partnership
-                        <br>Pricing
-                    </p>
-                </div>
-                <div class="flex flex-row gap-5">
-                    <img src="../assets/vector/instagram.svg" alt="Icon Instagram" />
-                    <img src="../assets/vector/linkedin.svg" alt="Icon LinkedIn" />
-                    <img src="../assets/vector/twitter.svg" alt="Icon Twitter" />
-                    <img src="../assets/vector/tiktok.svg" alt="Icon Tiktok" />
-                    <img src="../assets/vector/youtube.svg" alt="Icon Youtube" />
-                    <img src="../assets/vector/spotify.svg" alt="Icon Spotify" />
-
+                <div class="flex flex-col gap-8 lg:gap-16">
+                    <div class="flex flex-col lg:flex-row gap-10">
+                        <div class="flex flex-col gap-2 w-52">
+                            <h3 class="text-base font-semibold text-primary-darker">Service</h3>
+                            <p class="text-sm font-normal">Career Survivor
+                                <br>Career Accelerator
+                                <br>Talent Pool
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-2 w-52">
+                            <h3 class="text-base font-semibold text-primary-darker">Global Career Center</h3>
+                            <p class="text-sm font-normal">Indonesia
+                                <br>Malaysia
+                                <br>Istanbul
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-2 w-52">
+                            <h3 class="text-base font-semibold text-primary-darker">About US</h3>
+                            <p class="text-sm font-normal">Career
+                                <br>Partnership
+                                <br>Pricing
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-5">
+                        <img src="../assets/vector/instagram.svg" alt="Icon Instagram" />
+                        <img src="../assets/vector/linkedin.svg" alt="Icon LinkedIn" />
+                        <img src="../assets/vector/twitter.svg" alt="Icon Twitter" />
+                        <img src="../assets/vector/tiktok.svg" alt="Icon Tiktok" />
+                        <img src="../assets/vector/youtube.svg" alt="Icon Youtube" />
+                        <img src="../assets/vector/spotify.svg" alt="Icon Spotify" />
+                    </div>
                 </div>
             </div>
         </div>
