@@ -242,10 +242,10 @@
                     Pengumuman hasil & rekomendasi
                 </div>
             </div>
-            <button
-                class="inline-flex gap-2 justify-center items-center mt-4 lg:mt-10 w-full lg:w-[354px] h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
+            <a href="https://form.jotform.com/Consultant_Admission/college-admission-form"
+                class="inline-flex gap-2 justify-center items-center mt-4 lg:mt-10 w-full lg:w-[354px] h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold cursor-pointer">
                 Apply Now
-            </button>
+            </a>
         </div>
         {{-- Card Biaya dan Investasi --}}
         <div
@@ -373,10 +373,10 @@
                         pendalaman
                         pemula setiap pekannya diluar
                         jadwal diatas</p>
-                    <button
-                        class="inline-flex gap-2 items-center justify-center px-10 w-full lg:w-[354px] h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
+                    <a href="https://form.jotform.com/Consultant_Admission/college-admission-form"
+                        class="inline-flex gap-2 items-center justify-center px-10 w-full lg:w-[354px] h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold cursor-pointer">
                         Apply Now
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
