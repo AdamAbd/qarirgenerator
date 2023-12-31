@@ -7,22 +7,22 @@ const data = [
         ]
     },
     {
-        info: "3x dalam seminggu",
+        info: "2x dalam seminggu",
         jadwal: [
-            "Senin, 19.30 - 21.30 (UTC+7)",
-            "Selasa, 10.30 - 12.30 (UTC+7) or Selasa, 15.30 - 17.30 (UTC+7)"
+            "Kamis, 19.30 - 21.30 (UTC+7)",
+            "Sabtu, 10.30 - 12.30 (UTC+7) or Sabtu, 15.30 - 17.30 (UTC+7)"
         ]
     }
 ]
 
-function jadwalKelas(event){
+function jadwalKelas(event) {
     const labelKelas = event.target.dataset.label;
     const cardClass = event.target.parentNode.parentNode;
     const parentElement = event.target.parentNode;
     const btnJadwalKelas = parentElement.querySelectorAll('.jadwalKelas');
 
     btnJadwalKelas.forEach((e) => {
-        if(e.classList.contains('bg-primary')){
+        if (e.classList.contains('bg-primary')) {
             e.classList.remove('bg-primary')
             e.classList.remove('text-white')
 
@@ -43,5 +43,5 @@ function jadwalKelas(event){
     listJadwal.forEach(function (nilai, indeks) {
         nilai.innerHTML = data[labelKelas].jadwal[indeks];
     });
-    
+
 }

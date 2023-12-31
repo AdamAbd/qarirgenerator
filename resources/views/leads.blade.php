@@ -46,7 +46,7 @@
             <img src="../assets/vector/ai-m.svg" alt="Icon AI Engineering" class="lg:hidden" />
         </div>
         <button
-            class="inline-flex gap-2 lg:gap-4 items-center mt-5 lg:mt-10 px-5 lg:px-10 h-10 lg:h-14 bg-primary rounded-full text-sm last:text-lg font-bold">
+            class="inline-flex gap-2 lg:gap-4 items-center mt-5 lg:mt-10 px-5 lg:px-10 h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg font-bold">
             Pelajari Lebih Banyak
             <img src="../assets/vector/arrow-down.svg" alt="Arrow Down" class="w-4 lg:w-6" />
         </button>
@@ -84,17 +84,11 @@
             </div>
         </div>
         {{-- Card Kata Mereka --}}
-        <div class="bg-secondary/10 p-4 rounded-[18px] lg:px-[60px] lg:py-[30px] lg:w-1/2">
+        <div class="bg-secondary/10 p-4 rounded-[18px] lg:px-[60px] lg:py-[30px] lg:w-1/2 flex flex-col gap-4">
             <h2 class="text-lg lg:text-3xl font-bold lg:font-medium text-text">Kata Mereka</h2>
-            <div class="mt-4 w-40 overflow-scroll">
-                <div class="snap-start w-36">
-                    <img
-                        src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-                </div>
-                <div class="snap-start w-36">
-                    <img
-                        src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-                </div>
+            <img src="../assets/img/review1.png" class="w-[280px] lg:w-[600px] rounded-xl" />
+            <div class="w-20 h-1 lg:h-3 rounded-full relative bg-secondary/40 self-center">
+                <div class="w-10 h-1 lg:h-3 rounded-full absolute bg-secondary self-center"></div>
             </div>
         </div>
     </div>
@@ -365,7 +359,7 @@
                             <p><b>Kelas</b>
                                 <br>
                                 <br>
-                                <p id="info">2x dalam seminggu</p>
+                            <p id="info">2x dalam seminggu</p>
                             </p>
                             <ul id="listJadwal" class="list-disc ml-5">
                                 <li>Kamis, 19.30 - 21.30 (UTC+7)</li>
@@ -466,7 +460,7 @@
             </div>
         </div>
     </footer>
-    <script src="{{asset('js')}}/main.js"></script>
+    <script src="{{ asset('js') }}/main.js"></script>
 </body>
 
 </html>
