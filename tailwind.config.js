@@ -24,16 +24,16 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'leads': "linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.00) 71.84%), linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../assets/img/hero-leads.jpeg')",
+        'leads': "url('../assets/img/hero-leads.png')",
       },
     },
     container: {
       padding: {
         DEFAULT: '0.5rem',
-        sm: '2rem',
-        lg: '4rem',
-        xl: '5rem',
-        '2xl': '6rem',
+        sm: '1rem',
+        lg: '1rem',
+        xl: '1rem',
+        '2xl': '1rem',
       },
     },
   },
