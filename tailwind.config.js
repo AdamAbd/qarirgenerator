@@ -21,10 +21,18 @@ module.exports = {
         },
         text: {
           DEFAULT: '#262626',
+          light: '#A5A5A5'
+        },
+        chips: {
+          DEFAULT: '#00A053',
+        },
+        body: {
+          DEFAULT: '#FFFCF9',
         },
       },
       backgroundImage: {
         'leads': "url('../assets/img/hero-leads.png')",
+        'ai': "url('../assets/img/hero-ai.png')",
       },
     },
     container: {

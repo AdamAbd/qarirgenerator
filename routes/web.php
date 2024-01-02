@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/leads', function () {
     return view('leads');
 });
+
+Route::get('/program-ai', function () {
+    return view('ai');
+});
