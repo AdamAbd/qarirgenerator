@@ -9,7 +9,7 @@
 
 <body class="font-satoshi">
     {{-- Hero Section --}}
-    <div class="w-full h-[423px] lg:h-[708px] px-4 lg:px-[60px] bg-leads bg-center bg-cover text-white">
+    <section class="w-full h-[423px] lg:h-[708px] px-4 lg:px-[60px] bg-leads bg-center bg-cover text-white">
         <nav class="py-6 flex flex-row justify-between">
             <img src="../assets/vector/logo.svg" alt="Qarir Generator Logo" class="w-[150px] lg:hidden" />
             <div class="hidden lg:flex flex-row gap-[60px] items-center">
@@ -45,13 +45,14 @@
             <img src="../assets/vector/data-science-m.svg" alt="Icon Data Science" class="lg:hidden" />
             <img src="../assets/vector/ai-m.svg" alt="Icon AI Engineering" class="lg:hidden" />
         </div>
-        <button
+        <a href="#program"
             class="inline-flex gap-2 lg:gap-4 items-center mt-5 lg:mt-10 px-5 lg:px-10 h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg font-bold">
             Pelajari Lebih Banyak
             <img src="../assets/vector/arrow-down.svg" alt="Arrow Down" class="w-4 lg:w-6" />
-        </button>
-    </div>
-    <div class="mx-2 lg:mx-4 mt-4 flex flex-col lg:flex-row gap-4">
+        </a>
+    </section>
+    {{-- Card Manfaat Program & Kata Mereka --}}
+    <section id="program" class="mx-2 lg:mx-4 mt-4 flex flex-col lg:flex-row gap-4">
         {{-- Card Manfaat Program --}}
         <div class="bg-primary/10 p-4 lg:px-[60px] lg:py-[30px] lg:w-1/2 rounded-[18px]">
             <h2 class="text-lg lg:text-3xl font-bold lg:font-medium text-text">Manfaat Program</h2>
@@ -91,9 +92,9 @@
                 <div class="w-10 h-1 lg:h-3 rounded-full absolute bg-secondary self-center"></div>
             </div>
         </div>
-    </div>
+    </section>
     {{-- Card Best Student --}}
-    <div class="mx-2 lg:ml-[60px] lg:mr-[18px] mt-10 lg:mt-[42px]">
+    <section class="mx-2 lg:ml-[60px] lg:mr-[18px] mt-10 lg:mt-[42px]">
         <div class="px-2 flex flex-col lg:flex-row gap-4 lg:gap-8">
             <div class="flex flex-col gap-4">
                 <h2 class="text-lg lg:text-3xl font-bold lg:font-medium text-text">Student Terbaik 2023 : I Putu Harum
@@ -104,8 +105,8 @@
                     mengekstraksi
                     dan mengklasifikasikan opini
                     dan emosi dari teks.
-                    <br>
-                    <br>
+                    <br />
+                    <br />
                     Dengan menerapkan analisis sentimen pada umpan balik siswa, kita dapat memperoleh wawasan berharga
                     mengenai
                     keseluruhan pengalaman mereka, mengidentifikasi bidang kepuasan atau ketidakpuasan tertentu, dan
@@ -123,9 +124,9 @@
                 Pelajari Lebih Banyak
             </a>
         </div>
-    </div>
+    </section>
     {{-- Card Pengalaman di Kelas --}}
-    <div class="mx-2 lg:mx-4 mt-10 lg:mt-8">
+    <section class="mx-2 lg:mx-4 mt-10 lg:mt-8">
         <div class="px-4 lg:px-[60px] py-5 lg:py-[30px] bg-secondary rounded-[18px] text-white">
             <h2 class="text-lg lg:text-3xl font-semibold lg:font-medium">Pengalaman di Kelas</h2>
             <div class="mt-4 lg:mt-8 flex flex-col lg:flex-row gap-5">
@@ -153,9 +154,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     {{-- Card Kenapa Harus --}}
-    <div class="mx-4 lg:mx-[60px] mt-10 lg:mt-12">
+    <section class="mx-4 lg:mx-[60px] mt-10 lg:mt-12">
         <h2 class="text-lg lg:text-3xl font-semibold lg:font-medium">Kenapa Harus Qarir Generator?</h2>
         <div class="mt-4 flex flex-col gap-2 lg:gap-4">
             <div class="inline-flex gap-2 lg:gap-4">
@@ -173,53 +174,125 @@
         </div>
 
         <div
-            class="grid grid-cols-4 gap-2 mt-4 px-6 py-4 border border-primary rounded-t-[18px] bg-primary text-sm text-white font-medium">
-            <div>Benefit</div>
-            <div class="text-center">Campus Degree</div>
-            <div class="text-center">Other Bootcamp</div>
-            <div class="text-center">Qarir Generator</div>
+            class="flex flex-row gap-4 lg:gap-2 mt-4 px-6 py-4 bg-primary rounded-t-3xl text-base text-white font-normal">
+            <span class="w-3/6 lg:w-2/5">Benefit</span>
+            <span class="w-1/6 lg:w-1/5 flex justify-center text-center">
+                Campus Degree
+            </span>
+            <span class="w-1/6 lg:w-1/5 flex justify-center text-center">
+                Other Bootcamp
+            </span>
+            <span class="w-1/6 lg:w-1/5 flex justify-center text-center">
+                Qarir Generator
+            </span>
         </div>
-        <div class="border border-primary rounded-b-[18px] text-sm font-normal">
-            <div class="grid grid-cols-4 gap-2 px-6 py-4">
-                <div>Theory Knowledge</div>
-                <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle"
-                    class="w-5 justify-self-center self-center" />
-                <img src="../assets/vector/cancel.svg" alt="Icon Cancel"
-                    class="w-6 justify-self-center self-center" />
-                <img src="../assets/vector/cancel.svg" alt="Icon Cancel"
-                    class="w-6 justify-self-center self-center" />
+        <div class="border border-primary rounded-b-3xl">
+            <div class="flex flex-row gap-4 lg:gap-2 px-6 py-4 text-base font-normal">
+                <span class="w-3/6 lg:w-2/5">Theory Knowledge</span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle" class="w-5" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/cancel.svg" alt="Icon Cancel" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/cancel.svg" alt="Icon Cancel" class="w-6" />
+                </span>
             </div>
-            <div class="grid grid-cols-4 gap-2 px-6 py-4">
-                <div>Theory Knowledge</div>
-                <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle"
-                    class="w-5 justify-self-center self-center" />
-                <img src="../assets/vector/cancel.svg" alt="Icon Cancel"
-                    class="w-6 justify-self-center self-center" />
-                <img src="../assets/vector/cancel.svg" alt="Icon Cancel"
-                    class="w-6 justify-self-center self-center" />
+            <div class="flex flex-row gap-4 lg:gap-2 px-6 py-4 text-base font-normal">
+                <span class="w-3/6 lg:w-2/5">Social Life</span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle" class="w-5" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/cancel.svg" alt="Icon Cancel" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle" class="w-5" />
+                </span>
             </div>
-            <div class="grid grid-cols-4 gap-2 px-6 py-4">
-                <div>Validation of analytical thinking from Hands-on projects</div>
-                <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle"
-                    class="w-5 justify-self-center self-center" />
-                <img src="../assets/vector/cancel.svg" alt="Icon Cancel"
-                    class="w-6 justify-self-center self-center" />
-                <img src="../assets/vector/cancel.svg" alt="Icon Cancel"
-                    class="w-6 justify-self-center self-center" />
+            <div class="flex flex-row gap-4 lg:gap-2 px-6 py-4 text-base font-normal">
+                <span class="w-3/6 lg:w-2/5">Management trainee access</span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/cancel.svg" alt="Icon Cancel" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/cancel.svg" alt="Icon Cancel" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle" class="w-5" />
+                </span>
             </div>
-            <div class="grid grid-cols-4 gap-2 px-6 py-4">
-                <div>Theory Knowledge</div>
-                <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle"
-                    class="w-5 justify-self-center self-center" />
-                <img src="../assets/vector/cancel.svg" alt="Icon Cancel"
-                    class="w-6 justify-self-center self-center" />
-                <img src="../assets/vector/cancel.svg" alt="Icon Cancel"
-                    class="w-6 justify-self-center self-center" />
+            <div class="flex flex-row gap-4 lg:gap-2 px-6 py-4 text-base font-normal">
+                <span class="w-3/6 lg:w-2/5">
+                    Validation of analytical thinking from Hands-on projects
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/cancel.svg" alt="Icon Cancel" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle" class="w-5" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle" class="w-5" />
+                </span>
+            </div>
+            <div class="flex flex-row gap-4 lg:gap-2 px-6 py-4 text-base font-normal">
+                <span class="w-3/6 lg:w-2/5">
+                    Network of professionals and industry leaders
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/cancel.svg" alt="Icon Cancel" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/cancel.svg" alt="Icon Cancel" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle" class="w-5" />
+                </span>
+            </div>
+            <div class="flex flex-row gap-4 lg:gap-2 px-6 py-4 text-base font-normal">
+                <span class="w-3/6 lg:w-2/5">
+                    Soft skills management, leadership and communication
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/all-inclusive.svg" alt="Icon All Inclusive" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/all-inclusive.svg" alt="Icon All Inclusive" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle" class="w-5" />
+                </span>
+            </div>
+            <div class="flex flex-row gap-4 lg:gap-2 px-6 py-4 text-base font-normal">
+                <span class="w-3/6 lg:w-2/5">Connection with Global HR</span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/cancel.svg" alt="Icon Cancel" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/cancel.svg" alt="Icon Cancel" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle" class="w-5" />
+                </span>
+            </div>
+            <div class="flex flex-row gap-4 lg:gap-2 px-6 py-4 text-base font-normal">
+                <span class="w-3/6 lg:w-2/5">Apprenticeship</span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/all-inclusive.svg" alt="Icon All Inclusive" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/all-inclusive.svg" alt="Icon All Inclusive" class="w-6" />
+                </span>
+                <span class="w-1/6 lg:w-1/5 flex justify-center">
+                    <img src="../assets/vector/check-circle.svg" alt="Icon Checkmark Circle" class="w-5" />
+                </span>
             </div>
         </div>
-    </div>
-    {{--  --}}
-    <div class="mx-2 lg:mx-4 mt-10 lg:mt-12 flex flex-col lg:flex-row gap-4">
+    </section>
+    {{-- Card Bootcamp --}}
+    <section class="mx-2 lg:mx-4 mt-10 lg:mt-12 flex flex-col lg:flex-row gap-4">
         {{-- Card Alur Pendaftaran --}}
         <div class="bg-primary/10 p-4 lg:px-[60px] lg:py-[30px] rounded-[18px] lg:w-1/2 flex flex-col justify-center">
             <h2 class="text-lg lg:text-3xl font-bold lg:font-medium text-text">Alur Pendaftaran</h2>
@@ -255,8 +328,8 @@
             <p class="text-sm lg:text-lg font-light">Beasiswa potongan biaya pelatihan dan
                 <b class="text-primary">pengembangan karir selama 4 bulan hingga 70%
                 </b>
-                <br>
-                <br>
+                <br />
+                <br />
                 Sebelum beasiswa : <span class="line-through">Rp 14,500,000</span>
             </p>
             <div class="flex flex-col lg:flex-row gap-2 lg:gap-4">
@@ -278,11 +351,12 @@
                     Professional!</span>
             </div>
             <p class="text-text/50 text-xs lg:text-sm font-normal">*Kursi terbatas
-                <br> *Harga belum termasuk pajak dan enrollment fee
+                <br /> *Harga belum termasuk pajak dan enrollment fee
             </p>
         </div>
-    </div>
-    <div class="mx-4 lg:mx-[60px] mt-10 lg:mt-12 flex flex-col lg:flex-row">
+    </section>
+    {{-- Card Dukungan Karir & Personal Branding --}}
+    <section class="mx-4 lg:mx-[60px] mt-10 lg:mt-12 flex flex-col lg:flex-row">
         <div class="flex flex-col gap-2 lg:gap-4 w-full lg:w-[450px] lg:mr-8">
             <h2 class="text-lg lg:text-3xl font-semibold lg:font-medium">Dukungan Karir</h2>
             <p class="text-sm lg:text-lg font-light">Temui Pelatih Karir dan bersiaplah untuk memulai karir Kamu</p>
@@ -336,8 +410,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="mx-2 lg:mx-4 mt-10 lg:mt-12">
+    </section>
+    {{-- Jadwal Kelas Terdekat --}}
+    <section class="mx-2 lg:mx-4 mt-10 lg:mt-12">
         <div class="px-4 lg:px-[60px] py-5 lg:py-[30px] bg-secondary rounded-[18px] text-white">
             <h2 class="text-lg lg:text-3xl font-semibold lg:font-medium">Jadwal Kelas Terdekat</h2>
             <div class="flex flex-col lg:flex-row mt-4 lg:mt-8 gap-8">
@@ -357,9 +432,9 @@
                             class="w-4 lg:w-6" />
                         <div class="text-sm lg:text-lg font-normal">
                             <p><b>Kelas</b>
-                                <br>
-                                <br>
-                                <p id="infoJadwal">2x dalam seminggu</p>
+                                <br />
+                                <br />
+                            <p id="infoJadwal">2x dalam seminggu</p>
                             </p>
                             <ul id="listJadwal" class="list-disc ml-5">
                                 <li>Kamis, 19.30 - 21.30 (UTC+7)</li>
@@ -380,8 +455,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="mx-2 lg:mx-4 mt-10 lg:mt-8">
+    </section>
+    {{-- Card Kontak --}}
+    <section class="mx-2 lg:mx-4 mt-10 lg:mt-8">
         <div class="bg-primary/10 p-4 lg:py-[60px] rounded-[18px] flex flex-col items-center">
             <h2 class="text-lg lg:text-3xl font-bold lg:font-medium text-center">Masih Menentukan Pilihan?</h2>
             <p class="text-sm lg:text-2xl font-light text-center mt-2 lg:mt-4">Curhat dulu aja dengan Career Mentor
@@ -392,69 +468,91 @@
                 Kontak Career Mentor Kamu
             </button>
         </div>
-    </div>
-    <footer class="bg-secondary mt-9 lg:mt-[52px] pt-[26px] lg:pt-10 pb-11 lg:pb-7">
-        <div class="relative text-white">
-            <img src="../assets/img/world-map-ill.png" alt="World Map Illustration" class="absolute mt-16 lg:h-96">
-            <div class="flex flex-col lg:flex-row gap-10 px-4 lg:px-20">
+    </section>
+    <footer class="bg-secondary mt-9 lg:mt-[52px] pb-11 lg:pb-7">
+        <div class="relative text-white flex justify-center">
+            <img src="../assets/img/world-map.png" alt="World Map Illustration"
+                class="absolute z-0 w-full h-[440px] lg:w-2/3 lg:h-[380px] object-cover object-right opacity-30 mt-20 lg:mt-0" />
+            <div class="flex flex-col lg:flex-row gap-10 px-4 pt-[26px] lg:pt-10 lg:px-20">
                 <div class="flex flex-col gap-4 lg:w-2/5">
                     <img src="../assets/vector/logo.svg" alt="Qarir Generator Logo"
-                        class="w-[150px] lg:w-[167px] lg:h-10" />
+                        class="w-[150px] lg:w-[167px] lg:h-10" width={167} height={40} />
                     <div class="flex flex-col gap-2">
                         <h3 class="text-base font-semibold">Jakarta</h3>
-                        <p class="text-sm lg:text-base font-normal">QarirGenerator Office 8, level 18-A, Sudirman
-                            Central Business
-                            District
-                            (SCBD) Jl. Jenderal Sudirman
-                            no.1, RT8/RW3, Senayan, Kebayoran Baru, Jakarta Selatan.</p>
+                        <p class="text-sm lg:text-base font-normal">
+                            QarirGenerator Office 8, level 18-A, Sudirman Central Business
+                            District (SCBD) Jl. Jenderal Sudirman no.1, RT8/RW3, Senayan,
+                            Kebayoran Baru, Jakarta Selatan.
+                        </p>
                         <div class="inline-flex gap-2">
-                            <img src="../assets/vector/phone.svg" alt="Icon Phone" class="w-4 lg:w-6" />
-                            <span class="text-sm lg:text-base font-normal">+62 811-1001-4420</span>
+                            <img src="../assets/vector/phone.svg" alt="Icon Phone" class="w-4 lg:w-6" width={24}
+                                height={24} />
+                            <span class="text-sm lg:text-base font-normal">
+                                +62 811-1001-4420
+                            </span>
                         </div>
                     </div>
                     <div class="flex flex-col gap-2">
                         <h3 class="text-base font-semibold">Istanbul</h3>
-                        <p class="text-sm lg:text-base font-normal">Maslak, Büyükdere Cad. No:255 Nurol Plaza B.02,
-                            34450
+                        <p class="text-sm lg:text-base font-normal">
+                            Maslak, Büyükdere Cad. No:255 Nurol Plaza B.02, 34450
                             Sarıyer/İstanbul
                         </p>
                         <div class="inline-flex gap-2">
-                            <img src="../assets/vector/phone.svg" alt="Icon Phone" class="w-4 lg:w-6" />
-                            <span class="text-sm lg:text-base font-normal">+90 551 402 62 05</span>
+                            <img src="../assets/vector/phone.svg" alt="Icon Phone" class="w-4 lg:w-6" width={24}
+                                height={24} />
+                            <span class="text-sm lg:text-base font-normal">
+                                +90 551 402 62 05
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col gap-8 lg:gap-16">
                     <div class="flex flex-col lg:flex-row gap-10">
                         <div class="flex flex-col gap-2 w-52">
-                            <h3 class="text-base font-semibold text-primary-darker">Service</h3>
-                            <p class="text-sm font-normal">Career Survivor
-                                <br>Career Accelerator
-                                <br>Talent Pool
+                            <h3 class="text-base font-semibold text-primary-darker">
+                                Service
+                            </h3>
+                            <p class="text-sm font-normal">
+                                Career Survivor
+                                <br />
+                                Career Accelerator
+                                <br />
+                                Talent Pool
                             </p>
                         </div>
                         <div class="flex flex-col gap-2 w-52">
-                            <h3 class="text-base font-semibold text-primary-darker">Global Career Center</h3>
-                            <p class="text-sm font-normal">Indonesia
-                                <br>Malaysia
-                                <br>Istanbul
+                            <h3 class="text-base font-semibold text-primary-darker">
+                                Global Career Center
+                            </h3>
+                            <p class="text-sm font-normal">
+                                Indonesia
+                                <br />
+                                Malaysia
+                                <br />
+                                Istanbul
                             </p>
                         </div>
                         <div class="flex flex-col gap-2 w-52">
-                            <h3 class="text-base font-semibold text-primary-darker">About US</h3>
-                            <p class="text-sm font-normal">Career
-                                <br>Partnership
-                                <br>Pricing
+                            <h3 class="text-base font-semibold text-primary-darker">
+                                About US
+                            </h3>
+                            <p class="text-sm font-normal">
+                                Career
+                                <br />
+                                Partnership
+                                <br />
+                                Pricing
                             </p>
                         </div>
                     </div>
                     <div class="flex flex-row gap-5">
-                        <img src="../assets/vector/instagram.svg" alt="Icon Instagram" />
-                        <img src="../assets/vector/linkedin.svg" alt="Icon LinkedIn" />
-                        <img src="../assets/vector/twitter.svg" alt="Icon Twitter" />
-                        <img src="../assets/vector/tiktok.svg" alt="Icon Tiktok" />
-                        <img src="../assets/vector/youtube.svg" alt="Icon Youtube" />
-                        <img src="../assets/vector/spotify.svg" alt="Icon Spotify" />
+                        <img src="../assets/vector/instagram.svg" alt="Icon Instagram" width={26} height={26} />
+                        <img src="../assets/vector/linkedin.svg" alt="Icon LinkedIn" width={26} height={26} />
+                        <img src="../assets/vector/twitter.svg" alt="Icon Twitter" width={26} height={26} />
+                        <img src="../assets/vector/tiktok.svg" alt="Icon Tiktok" width={26} height={26} />
+                        <img src="../assets/vector/youtube.svg" alt="Icon Youtube" width={26} height={26} />
+                        <img src="../assets/vector/spotify.svg" alt="Icon Spotify" width={26} height={26} />
                     </div>
                 </div>
             </div>
