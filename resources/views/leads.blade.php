@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="font-satoshi">
+<body class="font-satoshi bg-body">
     {{-- Hero Section --}}
     <section class="w-full h-[423px] lg:h-[708px] px-4 lg:px-[60px] bg-leads bg-center bg-cover text-white">
         <nav class="py-6 flex flex-row justify-between">
@@ -478,7 +478,7 @@
                     <img src="../assets/vector/logo.svg" alt="Qarir Generator Logo"
                         class="w-[150px] lg:w-[167px] lg:h-10" width={167} height={40} />
                     <div class="flex flex-col gap-2">
-                        <h3 class="text-base font-semibold">Jakarta</h3>
+                        <h4 class="text-base font-semibold">Jakarta</h4>
                         <p class="text-sm lg:text-base font-normal">
                             QarirGenerator Office 8, level 18-A, Sudirman Central Business
                             District (SCBD) Jl. Jenderal Sudirman no.1, RT8/RW3, Senayan,
@@ -493,7 +493,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <h3 class="text-base font-semibold">Istanbul</h3>
+                        <h4 class="text-base font-semibold">Istanbul</h4>
                         <p class="text-sm lg:text-base font-normal">
                             Maslak, Büyükdere Cad. No:255 Nurol Plaza B.02, 34450
                             Sarıyer/İstanbul
@@ -510,9 +510,9 @@
                 <div class="flex flex-col gap-8 lg:gap-16">
                     <div class="flex flex-col lg:flex-row gap-10">
                         <div class="flex flex-col gap-2 w-52">
-                            <h3 class="text-base font-semibold text-primary-darker">
+                            <h4 class="text-base font-semibold text-primary-darker">
                                 Service
-                            </h3>
+                            </h4>
                             <p class="text-sm font-normal">
                                 Career Survivor
                                 <br />
@@ -522,9 +522,9 @@
                             </p>
                         </div>
                         <div class="flex flex-col gap-2 w-52">
-                            <h3 class="text-base font-semibold text-primary-darker">
+                            <h4 class="text-base font-semibold text-primary-darker">
                                 Global Career Center
-                            </h3>
+                            </h4>
                             <p class="text-sm font-normal">
                                 Indonesia
                                 <br />
@@ -534,9 +534,9 @@
                             </p>
                         </div>
                         <div class="flex flex-col gap-2 w-52">
-                            <h3 class="text-base font-semibold text-primary-darker">
+                            <h4 class="text-base font-semibold text-primary-darker">
                                 About US
-                            </h3>
+                            </h4>
                             <p class="text-sm font-normal">
                                 Career
                                 <br />
