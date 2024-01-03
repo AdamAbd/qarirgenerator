@@ -14,10 +14,12 @@ module.exports = {
         primary: {
           DEFAULT: '#FF9500',
           dark: '#FF7A00',
-          darker: '#FF9E16'
+          darker: '#FF9E16',
+          light: '#FFF3E3'
         },
         secondary: {
           DEFAULT: '#00263D',
+          light: '#084264'
         },
         text: {
           DEFAULT: '#262626',
@@ -33,6 +35,7 @@ module.exports = {
       backgroundImage: {
         'leads': "url('../assets/img/hero-leads.png')",
         'ai': "url('../assets/img/hero-ai.png')",
+        'container-icon': 'linear-gradient(135deg, #FFB72B 0%, #FFA01B 100%)'
       },
     },
     container: {
