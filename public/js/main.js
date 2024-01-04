@@ -111,3 +111,24 @@ function jadwalKelas(event) {
     }
 
 }
+
+function accordian(event, accordian){
+    const labelKelas = accordian;
+    const cardAccordion = document.querySelector(`#${labelKelas} .accordion-animator`);
+
+    if(cardAccordion.classList.contains("h-auto")){
+        cardAccordion.classList.remove('px-8')
+        cardAccordion.classList.remove('py-4')
+        cardAccordion.classList.remove('h-auto')
+
+        cardAccordion.classList.add("h-[0px]");
+    } else {
+        cardAccordion.classList.add("px-8");
+        cardAccordion.classList.add("py-4");
+        
+        cardAccordion.classList.remove("h-[0px]");
+        
+        cardAccordion.classList.add("h-auto");
+    }
+
+}

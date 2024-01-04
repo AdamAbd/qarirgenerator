@@ -57,51 +57,54 @@
             </div>
         </div>
     </section>
+
     <div class="flex flex-row gap-10 mx-4 lg:mx-[60px] mt-10 lg:mt-12">
         {{-- Sidebard --}}
-        <aside class="px-[30px] py-6 w-[280px] flex flex-col h-min gap-4 bg-white rounded-2xl drop-shadow-md">
+
+        <aside class="px-[30px] py-6 w-[280px] flex flex-col h-min gap-4 bg-white rounded-2xl drop-shadow-md sideBar sticky left-10 top-10">
             <h3 class="text-2xl text-text font-semibold">Course Details AI Engineer</h3>
-            <div class="inline-flex gap-4 items-center text-lg text-primary font-bold">
+            <a href="#about" class="inline-flex gap-4 items-center text-lg text-primary font-bold">
                 <div class="w-0.5 h-[34px] bg-primary"></div>
                 About Program
-            </div>
-            <div class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
+            </a>
+            <a href="#curriculum" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
                 <div class="w-0.5 h-[34px] bg-white"></div>
                 Curriculum
-            </div>
-            <div class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
+            </a>
+            <a href="#learning-phase" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
                 <div class="w-0.5 h-[34px] bg-white"></div>
                 Learning phase
-            </div>
-            <div class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
+            </a>
+            <a href="#proven-wethodology" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
                 <div class="w-0.5 h-[34px] bg-white"></div>
                 Proven Methodology
-            </div>
-            <div class="inline-flex gap-4 items-center">
+            </a>
+            <a href="#halal-guaranted" class="inline-flex gap-4 items-center">
                 <div class="w-0.5 h-[34px] bg-white"></div>
                 <div
                     class="inline-flex justify-center gap-2 py-1 w-[187px] bg-chips/10 rounded-xl text-lg text-chips font-medium">
                     <img src="../assets/vector/mosque.svg" alt="Icon Mosque">
                     Halal Guaranteed
                 </div>
-            </div>
-            <div class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
+            </a>
+            <a href="#alumni" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
                 <div class="w-0.5 h-[34px] bg-white"></div>
                 Alumni
-            </div>
-            <div class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
+            </a>
+            <a href="#country-fees" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
                 <div class="w-0.5 h-[34px] bg-white"></div>
                 Countries & Edu Fees
-            </div>
-            <div class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
+            </a>
+            <a href="#faq" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
                 <div class="w-0.5 h-[34px] bg-white"></div>
                 FAQ
-            </div>
+            </a>
             <a href="#program"
                 class="inline-flex justify-center items-center px-5 lg:px-10 h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
                 Apply Now
             </a>
         </aside>
+
         <div class="flex-1 flex flex-col gap-10">
             {{-- About --}}
             <section id="about" class="flex flex-col gap-4">
@@ -181,10 +184,12 @@
                     </div>
                 </div>
             </section>
+            
             <section id="curriculum">
                 <h2 class="text-lg lg:text-3xl font-bold lg:font-medium text-text">Topics You Will Learn</h2>
                 <div id="accordion-collapse" data-accordion="collapse" class="mt-6">
-                    <h2 id="accordion-collapse-heading-1">
+
+                    <h2 id="accordion-collapse-heading-1" onclick="accordian(event, 'accordion-collapse-body-1')">
                         <button type="button"
                             class="flex items-center justify-between w-full px-8 py-4 bg-primary rounded-full"
                             data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
@@ -195,7 +200,7 @@
                     </h2>
                     <div id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
                         <ul
-                            class="flex flex-col gap-4 px-8 py-4 bg-white rounded-[32px] text-text text-lg font-bold drop-shadow-md">
+                            class="accordion-animator flex flex-col h-auto transition-all duration-500 ease-out overflow-hidden gap-4 px-8 py-4 bg-white rounded-[32px] text-text text-lg font-bold drop-shadow-md">
                             <li>01. Introduction AI</li>
                             <li>02. Phyton for Data Science & AI Development</li>
                             <li>03. Overview Machine Learning
@@ -212,7 +217,8 @@
                             <li>08. AI Capstone Project</li>
                         </ul>
                     </div>
-                    <h2 id="accordion-collapse-heading-2">
+
+                    <h2 id="accordion-collapse-heading-2" onclick="accordian(event, 'accordion-collapse-body-2')">
                         <button type="button"
                             class="flex items-center justify-between w-full mt-4 px-8 py-4 bg-primary rounded-full"
                             data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
@@ -221,10 +227,10 @@
                             <img src="../assets/vector/expand-more.svg" alt="Icon Expand More">
                         </button>
                     </h2>
-                    <div id="accordion-collapse-body-2" class="hidden"
+                    <div id="accordion-collapse-body-2"
                         aria-labelledby="accordion-collapse-heading-2">
                         <ul
-                            class="flex flex-col gap-4 px-8 py-4 bg-white rounded-[32px] text-text text-lg font-bold drop-shadow-md">
+                            class="accordion-animator flex flex-col h-[0px] transition-all duration-500 ease-out overflow-hidden gap-4 bg-white rounded-[32px] text-text text-lg font-bold drop-shadow-md">
                             <li>01. Business Mindset</li>
                             <li>02. Story Telling</li>
                             <li>03. Overview Machine Learning</li>
@@ -233,7 +239,7 @@
                             <li>06. AI for Business Implementation</li>
                         </ul>
                     </div>
-                    <h2 id="accordion-collapse-heading-3">
+                    <h2 id="accordion-collapse-heading-3" onclick="accordian(event, 'accordion-collapse-body-3')">
                         <button type="button"
                             class="flex items-center justify-between w-full mt-4 px-8 py-4 bg-primary rounded-full"
                             data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
@@ -242,10 +248,10 @@
                             <img src="../assets/vector/expand-more.svg" alt="Icon Expand More">
                         </button>
                     </h2>
-                    <div id="accordion-collapse-body-3" class="hidden"
+                    <div id="accordion-collapse-body-3"
                         aria-labelledby="accordion-collapse-heading-3">
                         <div
-                            class="flex flex-col gap-4 px-8 py-4 bg-white rounded-[32px] text-text text-lg font-bold drop-shadow-md">
+                            class="accordion-animator flex flex-col h-[0px] transition-all duration-500 ease-out overflow-hidden gap-4 bg-white rounded-[32px] text-text text-lg font-bold drop-shadow-md">
                             <h4 class="text-lg font-bold">Powered by Forage & CSR Partner</h4>
                             <div class="inline-flex items-end gap-4 mt-8">
                                 <img src="../assets/img/accenture.png" alt="Accenture Logo">
@@ -257,7 +263,7 @@
                             </div>
                         </div>
                     </div>
-                    <h2 id="accordion-collapse-heading-4">
+                    <h2 id="accordion-collapse-heading-4" onclick="accordian(event, 'accordion-collapse-body-4')">
                         <button type="button"
                             class="flex items-center justify-between w-full mt-4 px-8 py-4 bg-primary rounded-full"
                             data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
@@ -266,9 +272,9 @@
                             <img src="../assets/vector/expand-more.svg" alt="Icon Expand More">
                         </button>
                     </h2>
-                    <div id="accordion-collapse-body-4" class="hidden"
+                    <div id="accordion-collapse-body-4"
                         aria-labelledby="accordion-collapse-heading-4">
-                        <div class="flex flex-row gap-6 px-8 py-4 bg-white rounded-[32px] drop-shadow-md">
+                        <div class="accordion-animator flex flex-row h-[0px] transition-all duration-500 ease-out overflow-hidden gap-6 bg-white rounded-[32px] drop-shadow-md">
                             <div class="flex flex-col items-center gap-3 p-4 w-1/5 rounded-3xl bg-primary-light">
                                 <img src="../assets/vector/work-p.svg" alt="Icon Work" class="w-16">
                                 <span class="text-lg text-center font-normal">
@@ -397,7 +403,7 @@
                     </div>
                 </div>
             </section>
-            <section class="inline-flex gap-3 items-center">
+            <section class="inline-flex gap-3 items-center" id="halal-guaranted">
                 <div class="flex flex-col gap-4">
                     <div
                         class="inline-flex items-center justify-center gap-2 px-4 w-fit h-12 bg-chips/10 rounded-xl text-2xl text-chips font-medium">
@@ -615,8 +621,8 @@
                 <p class="mt-2 text-lg font-light">
                     Here are Frequently asked questions from our previous students
                 </p>
-                <div id="accordion-collapse" data-accordion="collapse" class="mt-6">
-                    <h4 id="accordion-collapse-heading-1">
+                <div id="accordion-collapse" class="mt-6">
+                    <h4 id="accordion-collapse-heading-1" onclick="accordian(event, 'bottom-accordion-collapse-body-1')">
                         <button type="button"
                             class="flex items-center justify-between w-full px-8 py-2 bg-primary-light rounded-full"
                             data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
@@ -625,13 +631,13 @@
                             <img src="../assets/vector/expand-more-b.svg" alt="Icon Expand More">
                         </button>
                     </h4>
-                    <div id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
-                        <p class="px-8 py-4 bg-white rounded-[32px] text-text text-lg font-light drop-shadow-md">
+                    <div id="bottom-accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
+                        <p class="accordion-animator h-auto transition-all duration-500 ease-out overflow-hidden px-8 py-4 bg-white rounded-[32px] text-text text-lg font-light drop-shadow-md">
                             Yes but WITHOUT INTEREST ! Your installment will be provided by our financial aid department
                             to avoid you from interest rate! 100% Halal guaranteed.
                         </p>
                     </div>
-                    <h4 id="accordion-collapse-heading-2">
+                    <h4 id="accordion-collapse-heading-2" onclick="accordian(event, 'bottom-accordion-collapse-body-2')">
                         <button type="button"
                             class="flex items-center justify-between w-full mt-4 px-8 py-2 bg-primary-light rounded-full"
                             data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
@@ -641,13 +647,13 @@
                             <img src="../assets/vector/expand-more-b.svg" alt="Icon Expand More">
                         </button>
                     </h4>
-                    <div id="accordion-collapse-body-2" class="hidden"
+                    <div id="bottom-accordion-collapse-body-2"
                         aria-labelledby="accordion-collapse-heading-2">
-                        <p class="px-8 py-4 bg-white rounded-[32px] text-text text-lg font-light drop-shadow-md">
+                        <p class="accordion-animator h-[0px] transition-all duration-500 ease-out overflow-hidden bg-white rounded-[32px] text-text text-lg font-light drop-shadow-md">
                             Yes we do provide the session including zoom session through magic session clinic
                         </p>
                     </div>
-                    <h4 id="accordion-collapse-heading-3">
+                    <h4 id="accordion-collapse-heading-3" onclick="accordian(event, 'bottom-accordion-collapse-body-3')">
                         <button type="button"
                             class="flex items-center justify-between w-full mt-4 px-8 py-2 bg-primary-light rounded-full"
                             data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
@@ -657,13 +663,13 @@
                             <img src="../assets/vector/expand-more-b.svg" alt="Icon Expand More">
                         </button>
                     </h4>
-                    <div id="accordion-collapse-body-3" class="hidden"
+                    <div id="bottom-accordion-collapse-body-3"
                         aria-labelledby="accordion-collapse-heading-3">
-                        <p class="px-8 py-4 bg-white rounded-[32px] text-text text-lg font-light drop-shadow-md">
+                        <p class="accordion-animator h-[0px] transition-all duration-500 ease-out overflow-hidden bg-white rounded-[32px] text-text text-lg font-light drop-shadow-md">
                             Yes we do provide the session including zoom session through magic session clinic
                         </p>
                     </div>
-                    <h4 id="accordion-collapse-heading-4">
+                    <h4 id="accordion-collapse-heading-4" onclick="accordian(event, 'bottom-accordion-collapse-body-4')">
                         <button type="button"
                             class="flex items-center justify-between w-full mt-4 px-8 py-2 bg-primary-light rounded-full"
                             data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
@@ -672,9 +678,9 @@
                             <img src="../assets/vector/expand-more-b.svg" alt="Icon Expand More">
                         </button>
                     </h4>
-                    <div id="accordion-collapse-body-4" class="hidden"
+                    <div id="bottom-accordion-collapse-body-4"
                         aria-labelledby="accordion-collapse-heading-4">
-                        <p class="px-8 py-4 bg-white rounded-[32px] text-text text-lg font-light drop-shadow-md">
+                        <p class="accordion-animator h-[0px] transition-all duration-500 ease-out overflow-hidden bg-white rounded-[32px] text-text text-lg font-light drop-shadow-md">
                             We appreciate everyone to learn digital and tech skill !
                             <br />
                             <br />No discrimination of age, sex, and race to learn this session. However some our
