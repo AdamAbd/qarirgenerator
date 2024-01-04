@@ -63,42 +63,51 @@
 
         <aside class="px-[30px] py-6 w-[280px] flex flex-col h-min gap-4 bg-white rounded-2xl drop-shadow-md sideBar sticky left-10 top-10">
             <h3 class="text-2xl text-text font-semibold">Course Details AI Engineer</h3>
-            <a href="#about" class="inline-flex gap-4 items-center text-lg text-primary font-bold">
-                <div class="w-0.5 h-[34px] bg-primary"></div>
+
+            <a href="#about" id="about-lk" class="inline-flex gap-4 items-center text-lg text-primary font-bold">
+                <div class="w-0.5 h-[34px] bg-primary branch"></div>
                 About Program
             </a>
-            <a href="#curriculum" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
-                <div class="w-0.5 h-[34px] bg-white"></div>
+            
+            <a href="#curriculum" id="curriculum-lk" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
+                <div class="w-0.5 h-[34px] bg-white branch"></div>
                 Curriculum
             </a>
-            <a href="#learning-phase" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
-                <div class="w-0.5 h-[34px] bg-white"></div>
+            
+            <a href="#learning-phase" id="learning-phase-lk" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
+                <div class="w-0.5 h-[34px] bg-white branch"></div>
                 Learning phase
             </a>
-            <a href="#proven-wethodology" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
-                <div class="w-0.5 h-[34px] bg-white"></div>
+            
+            <a href="#proven-wethodology" id="proven-wethodology-lk" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
+                <div class="w-0.5 h-[34px] bg-white branch"></div>
                 Proven Methodology
             </a>
-            <a href="#halal-guaranted" class="inline-flex gap-4 items-center">
-                <div class="w-0.5 h-[34px] bg-white"></div>
+            
+            <a href="#halal-guaranted" id="halal-guaranted-lk" class="inline-flex gap-4 items-center">
+                <div class="w-0.5 h-[34px] bg-white branch"></div>
                 <div
                     class="inline-flex justify-center gap-2 py-1 w-[187px] bg-chips/10 rounded-xl text-lg text-chips font-medium">
                     <img src="../assets/vector/mosque.svg" alt="Icon Mosque">
                     Halal Guaranteed
                 </div>
             </a>
-            <a href="#alumni" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
-                <div class="w-0.5 h-[34px] bg-white"></div>
+            
+            <a href="#alumni" id="alumni-lk" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
+                <div class="w-0.5 h-[34px] bg-white branch"></div>
                 Alumni
             </a>
-            <a href="#country-fees" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
-                <div class="w-0.5 h-[34px] bg-white"></div>
+            
+            <a href="#country-fees" id="country-fees-lk" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
+                <div class="w-0.5 h-[34px] bg-white branch"></div>
                 Countries & Edu Fees
             </a>
-            <a href="#faq" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
-                <div class="w-0.5 h-[34px] bg-white"></div>
+            
+            <a href="#faq" id="faq-lk" class="inline-flex gap-4 items-center text-lg text-text-light font-medium">
+                <div class="w-0.5 h-[34px] bg-white branch"></div>
                 FAQ
             </a>
+            
             <a href="#program"
                 class="inline-flex justify-center items-center px-5 lg:px-10 h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
                 Apply Now
