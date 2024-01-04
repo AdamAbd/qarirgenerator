@@ -134,8 +134,6 @@ function accordian(event, accordian){
 }
 
 function onActiveSelector(selector){
-    console.log();
-
     if (selector.textContent != "Halal Guaranteed"){
         selector.classList.add('text-text-light')
         selector.classList.add('font-medium')
