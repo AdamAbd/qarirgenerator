@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
     @vite('resources/css/app.css')
 </head>
 
@@ -85,13 +87,25 @@
             </div>
         </div>
         {{-- Card Kata Mereka --}}
+
         <div class="bg-secondary/10 p-4 rounded-[18px] lg:px-[60px] lg:py-[30px] lg:w-1/2 flex flex-col gap-4">
             <h2 class="text-lg lg:text-3xl font-bold lg:font-medium text-text">Kata Mereka</h2>
-            <img src="../assets/img/review1.png" class="w-[280px] lg:w-[600px] rounded-xl" />
-            <div class="w-20 h-1 lg:h-3 rounded-full relative bg-secondary/40 self-center">
-                <div class="w-10 h-1 lg:h-3 rounded-full absolute bg-secondary self-center"></div>
+            
+            <div class="owl-slider">
+                <div class="owl-carousel owl-theme">
+                    <img src="../assets/img/review1.png" class="rounded-xl" style="height: 200px; width: 550px;"/>
+                    <img src="../assets/img/review1.png" class="rounded-xl" style="height: 200px; width: 550px;"/>
+                </div>
             </div>
+            
+            <div class="w-20 h-1 lg:h-3 rounded-full relative bg-secondary/40 self-center owl-dots">
+                <button class="w-10 h-1 lg:h-3 rounded-full absolute left-0 bg-secondary self-center owl-dot active transition-all" data-hash="1"></button>
+
+                <button class="w-10 h-1 lg:h-3 rounded-full absolute right-0 bg-secondary self-center owl-dot transition-all" data-hash="2"></button>
+            </div>
+
         </div>
+
     </section>
     {{-- Card Best Student --}}
     <section class="mx-2 lg:ml-[60px] lg:mr-[18px] mt-10 lg:mt-[42px]">
@@ -558,7 +572,9 @@
             </div>
         </div>
     </footer>
-    <script src="{{ asset('js') }}/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="{{ asset('js') }}/leads.js"></script>
 </body>
 
 </html>
