@@ -9,35 +9,13 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="font-satoshi bg-body">
+<body class="font-satoshi bg-body relative">
+    
+    <x-navbar />
+
     {{-- Hero Section --}}
     <section class="w-full h-[423px] lg:h-[708px] px-4 lg:px-[60px] bg-leads bg-center bg-cover text-white">
-        <nav class="py-6 flex flex-row justify-between">
-            <img src="../assets/vector/logo.svg" alt="Qarir Generator Logo" class="w-[150px] lg:hidden" />
-            <div class="hidden lg:flex flex-row gap-[60px] items-center">
-                <img src="../assets/vector/logo.svg" alt="Qarir Generator Logo" class="w-[200px]" />
-                <a href="/" class="text-base font-medium">Product</a>
-                <a href="/" class="text-base font-medium">Partnership</a>
-                <a href="/" class="text-base font-medium">Scholarship</a>
-                <a href="/" class="text-base font-medium">Article</a>
-            </div>
-            <div class="flex flex-row gap-6 items-center">
-                <a href="https://calendar.app.google/6xrDJSLWZhcYxYrs9"
-                    class="bg-gradient-to-r from-primary to-secondary h-10 lg:h-12 rounded-lg p-px cursor-pointer">
-                    <span
-                        class="flex items-center w-full h-full bg-secondary rounded-lg px-3.5 lg:px-5 py-4 text-sm lg:text-base font-medium">
-                        Book A Call
-                    </span>
-                </a>
-                <div class="w-px h-6 bg-white hidden lg:flex"></div>
-                <button class="gap-2 hidden lg:inline-flex ">
-                    <img src="../assets/vector/globe1.svg" alt="Icon Globe" />
-                    <span class="text-base font-medium">English</span>
-                    <img src="../assets/vector/dropdown.svg" alt="Icon Globe" />
-                </button>
-            </div>
-            <img src="../assets/vector/menu.svg" alt="Menu" class="mr-2 cursor-pointer lg:hidden" />
-        </nav>
+        
         <h1 class="text-2xl lg:text-5xl font-bold mt-14 lg:mt-20">Tentukan Masa Depanmu</h1>
         <div class="flex flex-row justify-between lg:justify-start lg:gap-6 mt-5 lg:mt-10">
             <img src="../assets/vector/digital-marketing.svg" alt="Icon Digital Marketing" class="hidden lg:flex" />

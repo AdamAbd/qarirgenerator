@@ -42,6 +42,4 @@ window.addEventListener("scroll", function () {
     pipeNavbar.classList.toggle("bg-white", window.scrollY == 0);
     globeBlack.classList.toggle("hidden", window.scrollY == 0);
     drowdownBlack.classList.toggle("hidden", window.scrollY == 0);
-
-    animatorSideBar();
 });

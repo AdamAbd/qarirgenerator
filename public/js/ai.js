@@ -193,3 +193,7 @@ async function animatorSideBar() {
     animatorSelector(countryFees, countryFeesBag, faqBag);
     animatorSelector(faq, faqBag, faqBag * 0);
 }
+
+window.addEventListener("scroll", function () {
+    animatorSideBar();
+});
