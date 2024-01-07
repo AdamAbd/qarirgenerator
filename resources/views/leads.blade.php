@@ -574,6 +574,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="{{ asset('js') }}/main.js"></script>
     <script src="{{ asset('js') }}/leads.js"></script>
 </body>
 
