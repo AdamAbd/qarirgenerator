@@ -76,12 +76,12 @@
                     </div>
                 </div>
                 <div class="flex flex-row gap-5">
-                    <img src="../assets/vector/instagram.svg" alt="Icon Instagram" width={26} height={26} />
-                    <img src="../assets/vector/linkedin.svg" alt="Icon LinkedIn" width={26} height={26} />
-                    <img src="../assets/vector/twitter.svg" alt="Icon Twitter" width={26} height={26} />
-                    <img src="../assets/vector/tiktok.svg" alt="Icon Tiktok" width={26} height={26} />
-                    <img src="../assets/vector/youtube.svg" alt="Icon Youtube" width={26} height={26} />
-                    <img src="../assets/vector/spotify.svg" alt="Icon Spotify" width={26} height={26} />
+                    <img src="../assets/vector/instagram.svg" alt="Instagram Logo" />
+                    <img src="../assets/vector/linkedin.svg" alt="LinkedIn Logo" />
+                    <img src="../assets/vector/twitter.svg" alt="Twitter Logo" />
+                    <img src="../assets/vector/tiktok.svg" alt="Tiktok Logo" />
+                    <img src="../assets/vector/youtube.svg" alt="Youtube Logo" />
+                    <img src="../assets/vector/spotify.svg" alt="Spotify Logo" />
                 </div>
             </div>
         </div>

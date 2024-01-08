@@ -21,6 +21,14 @@ Route::get('/leads', function () {
     return view('leads');
 });
 
+Route::get('/data-science', function () {
+    return view('data-science');
+});
+
+Route::get('/digital-marketing', function () {
+    return view('digital-marketing');
+});
+
 Route::get('/program-ai', function () {
     return view('ai');
 });
