@@ -564,7 +564,8 @@
                     Transparent & Halal Payment Options
                 </p>
                 <div class="flex flex-col-reverse lg:flex-row-reverse gap-4 mt-4">
-                    <div class="p-4 lg:px-[60px] lg:py-[30px] border border-primary rounded-[18px] lg:rounded-[32px]">
+                    <div
+                        class="p-4 lg:px-[60px] lg:py-[30px] w-full border border-primary rounded-[18px] lg:rounded-[32px]">
                         <div class="flex flex-col gap-4">
                             <h3 class="text-lg lg:text-2xl text-text font-semibold text-center">International Student
                                 <br /> (English & Turkiye)
@@ -626,7 +627,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="p-4 lg:px-[60px] lg:py-[30px] bg-primary/10 rounded-[18px] lg:rounded-[32px]">
+                    <div class="p-4 lg:px-[60px] lg:py-[30px] w-full bg-primary/10 rounded-[18px] lg:rounded-[32px]">
                         <div class="flex flex-col gap-4">
                             <h3 class="text-lg lg:text-2xl text-text font-semibold text-center">Southeast Asia
                                 <br /> (Bahasa Indonesia)
