@@ -117,14 +117,16 @@ function accordian(event, accordian) {
     const cardAccordion = document.querySelector(`#${labelKelas} .accordion-animator`);
 
     if (cardAccordion.classList.contains("h-auto")) {
-        cardAccordion.classList.remove('px-8')
+        cardAccordion.classList.remove('px-4')
         cardAccordion.classList.remove('py-4')
+        cardAccordion.classList.remove('lg:px-8')
         cardAccordion.classList.remove('h-auto')
 
         cardAccordion.classList.add("h-[0px]");
     } else {
-        cardAccordion.classList.add("px-8");
+        cardAccordion.classList.add("px-4");
         cardAccordion.classList.add("py-4");
+        cardAccordion.classList.add("lg:px-8");
 
         cardAccordion.classList.remove("h-[0px]");
 
