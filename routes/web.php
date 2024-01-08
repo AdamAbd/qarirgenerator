@@ -19,3 +19,11 @@ Route::get('/', function () {
 });
 
 Route::get('/counter', Counter::class);
+
+Route::get('/leads', function () {
+    return view('leads');
+});
+
+Route::get('/program-ai', function () {
+    return view('ai');
+});
