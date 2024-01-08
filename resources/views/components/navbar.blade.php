@@ -1,9 +1,12 @@
-<nav id="navbar" class="fixed top-0 left-0 z-50 py-6 px-4 lg:px-[60px] transition-all ease-in-out w-full bg-transparant flex flex-row justify-between text-white">
+<nav id="navbar"
+    class="fixed top-0 left-0 z-50 py-6 px-4 lg:px-[60px] transition-all ease-in-out w-full bg-transparant flex flex-row justify-between text-white">
     <img id="mobile-logo-white" src="../assets/vector/logo.svg" alt="Qarir Generator Logo" class="w-[150px] lg:hidden" />
-    <img id="mobile-logo-black" src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-[150px] lg:hidden" /> 
+    <img id="mobile-logo-black" src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo"
+        class="w-[150px] lg:hidden" />
     <div class="hidden lg:flex flex-row gap-[60px] items-center">
         <img id="logo-white" src="../assets/vector/logo.svg" alt="Qarir Generator Logo" class="w-[200px]" />
-        <img id="logo-black" src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="hidden w-[200px]" />
+        <img id="logo-black" src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo"
+            class="hidden w-[200px]" />
         <a href="/" class="text-base font-medium">Product</a>
         <a href="/" class="text-base font-medium">Partnership</a>
         <a href="/" class="text-base font-medium">Scholarship</a>
