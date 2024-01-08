@@ -11,15 +11,14 @@
     <x-navbar />
 
     {{-- Hero Section --}}
-    <section class="w-full h-[423px] lg:h-[708px] px-4 lg:px-[60px] bg-ai bg-center bg-cover text-white">
+    <section class="w-full h-[423px] lg:h-[708px] px-4 lg:px-[60px] bg-center bg-cover text-white"
+        style="background-image: url('../assets/img/hero-data-science.png');">
         <div class="flex flex-col lg:w-[681px] gap-6 lg:gap-10">
-            <h1 class="text-2xl lg:text-5xl font-bold mt-24 lg:mt-44 leading-10">Accelerate Your Career in Program AI
+            <h1 class="text-2xl lg:text-5xl font-bold mt-24 lg:mt-44 leading-10">Accelerate Your Career in Data Science
             </h1>
-            <p class="text-sm lg:text-2xl text-white/75 font-normal lg:font-light leading-normal">Keep up to date with
-                the latest
-                technology of
-                Artificial Intelligence and the implementation in Business. Become AI Engineer and get ready to make an
-                impact with AI</p>
+            <p class="text-sm lg:text-2xl text-white/75 font-normal lg:font-light leading-normal">Learning data science,
+                data analytics, and machine learning to build the project with a mentor, get connected with global
+                companies, and learn business like MBA in tech to elevate your career level!</p>
             <div class="flex flex-col lg:flex-row gap-2 lg:gap-6">
                 <a href="#program"
                     class="inline-flex lg:gap-4 items-center px-5 lg:px-10 w-fit h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg font-bold">
@@ -37,7 +36,7 @@
     <div class="flex flex-col lg:flex-row gap-10 mx-4 lg:mx-[60px] mt-[18px] lg:mt-12">
         <aside
             class="px-[30px] py-6 w-[280px] hidden lg:flex flex-col h-min gap-4 bg-white rounded-2xl drop-shadow-md sideBar sticky left-10 top-28">
-            <h3 class="text-2xl text-text font-semibold">Course Details AI Engineer</h3>
+            <h3 class="text-2xl text-text font-semibold">Course Details Data Science</h3>
 
             <a href="#about" id="about-lk" class="inline-flex gap-4 items-center text-lg text-primary font-bold">
                 <div class="w-0.5 h-[34px] bg-primary branch"></div>
@@ -96,18 +95,17 @@
         <div class="lg:flex-1 flex flex-col gap-10">
             <section id="about" class="flex flex-col gap-4">
                 <h2 class="text-lg lg:text-3xl font-bold lg:font-medium text-text">About Program</h2>
-                <p class="text-sm lg:text-lg font-normal">This new collaborative bootcamp delves into topics such as
-                    fundamentals
-                    of AI, data mining, neural
-                    networks and deep learning allowing you to understand and utilize algorithms and data structures,
-                    critique the role of implications of AI in society and apply that in-depth knowledge to address
-                    engineering problems.
+                <p class="text-sm lg:text-lg font-normal">Data science combines multiple fields, including statistics,
+                    scientific methods, artificial intelligence (AI), and data analysis, to extract value from data.
                     <br />
                     <br />
-                    You will also learn from Product Manager of AI development to implement AI and communicate it well
-                    to potential user.
-                    This program require you to have minimum 3 months intensive session live through zoom with Senior
-                    Data Scientist
+                    Those who practice data science are called data scientists, and they combine a range of skills to
+                    analyze data collected from the web, smartphones, customers, sensors, and other sources to derive
+                    actionable insights.
+                    Data science is one of the most exciting fields today. Like oil, it is a treasure trove of promised
+                    potential. Companies around the world rely largely on data- driven decision making across functions.
+                    This program require you to have 4 month intensive session live through zoom with Senior Data
+                    Scientist. You don’t need to have a programming/tech background
                 </p>
             </section>
             <section class="bg-primary/10 p-4 lg:px-[60px] lg:py-[30px] rounded-[18px] lg:rounded-[32px]">
@@ -193,20 +191,35 @@
                     <div id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
                         <ul
                             class="accordion-animator flex flex-col h-auto transition-all duration-500 ease-out overflow-hidden gap-4 px-4 lg:px-8 py-4 bg-white rounded-[32px] text-text text-sm lg:text-lg font-bold drop-shadow-md">
-                            <li>01. Introduction AI</li>
-                            <li>02. Phyton for Data Science & AI Development</li>
-                            <li>03. Overview Machine Learning
+                            <li>01. Python Programming
                                 <ul class="ml-9 font-medium">
-                                    <li>Regresion</li>
-                                    <li>Clasification</li>
-                                    <li>Clustering</li>
+                                    <li>- Introduction Python</li>
+                                    <li>- Python Fundamental</li>
+                                    <li>- Logic, Comparison, Condition</li>
+                                    <li>- Looping and Data Type</li>
+                                    <li>- Function, Lambda Expression & Algorithm Training</li>
                                 </ul>
                             </li>
-                            <li>04. Recommender System & Big Data</li>
-                            <li>05. Deep Learning with Keras</li>
-                            <li>06. Natural Language Processing</li>
-                            <li>07. Deep Learning with Tensorflow</li>
-                            <li>08. AI Capstone Project</li>
+                            <li>02. Data Analysis
+                                <ul class="ml-9 font-medium">
+                                    <li>- Numpy Package and Pandas Package</li>
+                                    <li>- Pandas Package: Data Frame & Various Methods</li>
+                                    <li>- Data Analysis: Basic Data Handling & Visualization</li>
+                                    <li>- Data Analysis: Basic Statistic</li>
+                                    <li>- Data Analysis: SQL Language</li>
+                                    <li>- Case Study: Data Exploration</li>
+                                </ul>
+                            </li>
+                            <li>03. Machine Learning
+                                <ul class="ml-9 font-medium">
+                                    <li>- Machine Learning Fundamental & Data Preprocessing</li>
+                                    <li>- Supervised Learning 1: Regression & Evaluation</li>
+                                    <li>- Supervised Learning 2: Classification & Evaluation</li>
+                                    <li>- Unsupervised Learning: Clustering</li>
+                                    <li>- Model Tuning and Evaluation</li>
+                                    <li>- Case Study: Develop ML for business case</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
 
@@ -313,27 +326,27 @@
                     <h2 class="text-lg lg:text-3xl font-bold lg:font-medium">Bootcamp Journey</h2>
                     <div class="gap-6 flex flex-col lg:flex-row mt-8">
                         <div class="flex-1 flex flex-col items-center h-[228px] rounded-3xl bg-secondary-light p-4">
-                            <img src="../assets/vector/ac-unit.svg" alt="Funda Icon">
+                            <img src="../assets/vector/python.svg" alt="Python Logo">
                             <p class="text-base mt-3 text-center"><b>Month 1 :</b>
-                                <br />Fundamental of AI & EDA
+                                <br />Fundamental of phyton & programming skill
                             </p>
                         </div>
                         <div class="flex-1 flex flex-col items-center h-[228px] rounded-3xl bg-secondary-light p-4">
                             <img src="../assets/vector/database.svg" alt="Database Icon">
                             <p class="text-base mt-3 text-center"><b>Month 2 :</b>
-                                <br /> ML review & Big data
+                                <br /> Exploratory Data Analysis, Business Knowledge, SQL
                             </p>
                         </div>
                         <div class="flex-1 flex flex-col items-center h-[228px] rounded-3xl bg-secondary-light p-4">
                             <img src="../assets/vector/donut-small.svg" alt="Chart Icon">
                             <p class="text-base mt-3 text-center"><b>Month 3 :</b>
-                                <br /> Deep learning & NLP
+                                <br /> Visualization, Powering Statistic
                             </p>
                         </div>
                         <div class="flex-1 flex flex-col items-center h-[228px] rounded-3xl bg-secondary-light p-4">
                             <img src="../assets/vector/bid-landscape.svg" alt="Progress Icon">
                             <p class="text-base mt-3 text-center"><b>Month 4 :</b>
-                                <br /> Recommender , Business Performance & Final Project
+                                <br /> ML & Final Project
                             </p>
                         </div>
                     </div>
