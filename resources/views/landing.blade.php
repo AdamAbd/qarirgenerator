@@ -9,6 +9,78 @@
     @vite('resources/css/app.css')
 </head>
 
+<style>
+
+:root {
+  --marquee-width: 80vw;
+  /* --marquee-height: 0vh; */
+  /* --marquee-elements: 12; defined with JavaScript */
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+/* .marquee:before, .marquee:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+} */
+
+.marquee:before {
+  left: 0;
+  /* background: linear-gradient(to right, #111 0%, transparent 100%); */
+}
+
+.marquee:after {
+  right: 0;
+  /* background: linear-gradient(to left, #111 0%, transparent 100%); */
+}
+
+.our-alumni-left{
+    animation: scrollingLeft var(--marquee-animation-duration) linear infinite;
+}
+
+.our-alumni-right{
+    animation: scrollingRight var(--marquee-animation-duration) linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollingLeft {
+  0% { 
+    transform: translateX(0);
+ }
+ 100% { 
+    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); 
+ }
+}
+
+@keyframes scrollingRight {
+  0% { 
+    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); 
+  }
+  100% { 
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before, .marquee:after { width: 5rem; }
+}
+
+</style>
+
 <body class="font-satoshi bg-body relative">
     <x-navbar />
 
@@ -40,7 +112,7 @@
                 level of their
                 career.</p>
             <div class="flex flex-row mt-4 lg:mt-8 pl-4 lg:pl-11 gap-4">
-                <span class="text-4xl font-bold">3000 ++</span>
+                <span id="our-impact" class="text-4xl font-bold">0</span>
                 <div class="flex flex-row flex-1 justify-between">
                     <img src="../assets/img/person-impact.png" alt="Person Impact 1" class="w-10">
                     <img src="../assets/img/person-impact1.png" alt="Person Impact 2" class="w-10">
@@ -291,7 +363,70 @@
             <div
                 class="absolute top-0 right-0 w-16 lg:w-36 h-[232px] lg:h-[464px] bg-gradient-to-l from-white to-transparent">
             </div>
-            <div class="flex flex-col justify-between">
+            <div class="flex flex-col gap-2 justify-between overflow-hidden">
+                <div class="marquee overflow-hidden relative">
+                    <ul class="marquee-content our-alumni-left list-none h-full flex flex-row gap-8">
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                    </ul>
+                </div>
+                <div class="marquee overflow-hidden relative">
+                    <ul class="marquee-content our-alumni-right list-none h-full flex flex-row gap-8">
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                    </ul>
+                </div>
+                <div class="marquee overflow-hidden relative">
+                    <ul class="marquee-content our-alumni-left list-none h-full flex flex-row gap-8">
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                    </ul>
+                </div>
+                <div class="marquee overflow-hidden relative">
+                    <ul class="marquee-content our-alumni-right list-none h-full flex flex-row gap-8">
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                    </ul>
+                </div>
+                <div class="marquee overflow-hidden relative">
+                    <ul class="marquee-content our-alumni-left list-none h-full flex flex-row gap-8">
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                        <li class="flex justify-center items-center flex-shrink-0 w-[var(--marquee-element-width)] max-h-full text-lg whitespace-nowrap"><img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" /></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="flex flex-col justify-between">
                 <img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" />
                 <img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" />
                 <img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" />
@@ -346,7 +481,7 @@
                 <img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" />
                 <img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" />
                 <img src="../assets/vector/logo-color.svg" alt="Qarir Generator Logo" class="w-24 lg:w-36" />
-            </div>
+            </div> -->
 
         </div>
     </section>
@@ -354,6 +489,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
     <script src="{{ asset('js') }}/main.js"></script>
+    <script src="{{ asset('js') }}/landing.js"></script>
 </body>
 
 </html>
