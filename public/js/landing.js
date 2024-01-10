@@ -1,30 +1,30 @@
 function animateOurImpact(targetValue, duration) {
-    const ourImpact = document.getElementById('our-impact');
-    const startValue = 0;
-    const increment = 1;
-    const interval = Math.floor(duration / (targetValue - startValue));
+  const ourImpact = document.getElementById('our-impact');
+  const startValue = 0;
+  const increment = 1;
+  const interval = Math.floor(duration / (targetValue - startValue));
 
-    // Fungsi rekursif untuk mengupdate nilai dan memanggil dirinya sendiri
+  // Fungsi rekursif untuk mengupdate nilai dan memanggil dirinya sendiri
 
-    function updateCounter(currentValue) {
-        ourImpact.textContent = currentValue;
+  function updateCounter(currentValue) {
+    ourImpact.textContent = currentValue;
 
-        if (currentValue < targetValue) {
-            setTimeout(() => {
-                updateCounter(currentValue + increment);
-            }, interval);
-        }
-
-        if(currentValue == 3000){
-            ourImpact.textContent = currentValue + " ++";
-        }
+    if (currentValue < targetValue) {
+      setTimeout(() => {
+        updateCounter(currentValue + increment);
+      }, interval);
     }
 
-    updateCounter(startValue);
+    if (currentValue == 3000) {
+      ourImpact.textContent = currentValue;
+    }
+  }
+
+  updateCounter(startValue);
 }
 
 // nilai target 3000 dan durasi 3000 milidetik
-animateOurImpact(3000, 3000);
+animateOurImpact(3000, 1000);
 
 const root = document.documentElement;
 const marqueeContents = document.querySelectorAll("ul[class^='marquee-content']");
