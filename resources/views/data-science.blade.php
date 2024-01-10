@@ -20,7 +20,7 @@
                 data analytics, and machine learning to build the project with a mentor, get connected with global
                 companies, and learn business like MBA in tech to elevate your career level!</p>
             <div class="flex flex-col lg:flex-row gap-2 lg:gap-6">
-                <a href="#program"
+                <a href="https://api.whatsapp.com/send?phone=6281110014420"
                     class="inline-flex lg:gap-4 items-center px-5 lg:px-10 w-fit h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg font-bold">
                     Free Mentor Consultation
                 </a>
@@ -86,7 +86,7 @@
                 FAQ
             </a>
 
-            <a href="#program"
+            <a href="https://form.jotform.com/Consultant_Admission/non-sch-admission"
                 class="inline-flex justify-center items-center px-5 lg:px-10 h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
                 Apply Now
             </a>
@@ -632,11 +632,11 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-2 lg:gap-4 mt-6 lg:mt-8">
-                            <a href="#program"
+                            <a href="https://form.jotform.com/Consultant_Admission/non-sch-admission"
                                 class="inline-flex justify-center items-center px-5 lg:px-10 h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
                                 Pay in Installment
                             </a>
-                            <a href="#program"
+                            <a href="https://form.jotform.com/Consultant_Admission/non-sch-admission"
                                 class="inline-flex justify-center items-center px-5 lg:px-10 h-10 lg:h-14 border border-primary rounded-full text-sm lg:text-lg text-primary font-bold">
                                 Sign Up Now!!
                             </a>
@@ -695,11 +695,11 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-2 lg:gap-4 mt-6 lg:mt-8">
-                            <a href="#program"
+                            <a href="https://form.jotform.com/Consultant_Admission/non-sch-admission"
                                 class="inline-flex justify-center items-center px-5 lg:px-10 h-10 lg:h-14 bg-primary rounded-full text-sm lg:text-lg text-white font-bold">
                                 Pay in Installment
                             </a>
-                            <a href="#program"
+                            <a href="https://form.jotform.com/Consultant_Admission/non-sch-admission"
                                 class="inline-flex justify-center items-center px-5 lg:px-10 h-10 lg:h-14 border border-primary bg-white rounded-full text-sm lg:text-lg text-primary font-bold">
                                 Sign Up Now!!
                             </a>
